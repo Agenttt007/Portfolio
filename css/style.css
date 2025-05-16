@@ -1,6 +1,15 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
-    --first-color: ;
-    --second-color: ;
+    --txt-color: #212121;
+    --second-color: #09A494;
+    --yellow: #E5BB33;
+    --blue: #205B75;
+    --bg-color: #FFFFFF;
 }
 
 body {
@@ -8,6 +17,8 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px / 20px;
+    color: var(--txt-color);
+    background-color: var(--bg-color);
 }
 
 h1 {
@@ -58,4 +69,9 @@ div {
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
+}
+
+footer {
+    color: var(--bg-color);
+    background-color: var(--blue);
 }
