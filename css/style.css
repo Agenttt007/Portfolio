@@ -4,3 +4,21 @@ body {
     font-size: 20px;
     line-height: 30px / 20px;
 }
+
+h1 {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+
+}
+
+h2 {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0%;
+
+}
