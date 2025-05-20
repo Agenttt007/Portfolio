@@ -74,6 +74,10 @@ a {
     color: var(--second-color);
 }
 
+a:hover{
+    color: var(--yellow);
+}
+
 div {
     font-family: "Open Sans";
     font-weight: 400;
