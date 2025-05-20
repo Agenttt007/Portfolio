@@ -19,6 +19,7 @@ body {
     line-height: 30px / 20px;
     color: var(--txt-color);
     background-color: var(--bg-color);
+    
 }
 
 h1 {
@@ -86,6 +87,18 @@ div {
     letter-spacing: 0%;
     text-align: center;
 }
+
+button {
+    padding: 6;
+    border: none;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: lowercase;
+    border: 5px;
+    border-radius: 20px;
+}
+
 
 footer {
     color: var(--bg-color);
