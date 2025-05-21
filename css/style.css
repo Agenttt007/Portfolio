@@ -135,7 +135,35 @@ button.hover {
     overflow: hidden;
 }
 
+.span{
+    width: 50;
+    height: 50;
+    top: 20px;
+    left: 20px;
+    border-radius: 50000000px;
+    border-width: 1px;
+    gap: 10px;
+    padding: 10px;
+    
+}
 
+.span.hover {
+    color: var(--bg-color);
+    outline-color: var(--second-color);
+    background-color: var(--second-color);
+
+}
+
+.social {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.social li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
 
 footer {
     color: var(--bg-color);
