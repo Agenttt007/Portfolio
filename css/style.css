@@ -100,7 +100,7 @@ button {
     cursor: pointer;
     text-transform: lowercase;
     outline-color: var(--bg-color);
-    /*border: 5px;*/
+    border: 5px;
     border-radius: 20px;
 }
 
@@ -109,6 +109,32 @@ button.hover {
     outline-color: var(--second-color);
     background-color: var(--second-color);
 }
+
+.social {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 
 
 footer {
