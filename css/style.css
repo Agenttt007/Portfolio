@@ -89,7 +89,11 @@ div {
 }
 
 button {
+    padding: 0;
     border: none;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
     padding: 6px 10px 10px;
     color: var(--second-color);
     background-color: var(--bg-color);
