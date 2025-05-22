@@ -179,7 +179,7 @@ button:hover {
 
 .social-link_gitlab {
     
-    background-image: img/social=gitlab.svg;
+    background-image: url('img/social=gitlab.svg');
 }
 
 .social-link_github {
