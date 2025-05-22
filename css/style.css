@@ -122,6 +122,12 @@ button.hover {
     padding: 0;
 }
 
+social-link{
+    display: block;
+    width: 30;
+    height: 30;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -167,9 +173,6 @@ button.hover {
 }*/
 
 .social-link_gitlab {
-    display: block;
-    width: 30;
-    height: 30;
     top: 20px;
     left: 220px;
     
@@ -178,9 +181,6 @@ button.hover {
 }
 
 .social-link_github {
-    display: block;
-    width: 30;
-    height: 30;
     top: 20px;
     left: 20px;
     
@@ -189,9 +189,6 @@ button.hover {
 }
 
 .social-link_telegram {
-    display: block;
-    width: 30;
-    height: 30;
     top: 20px;
     left: 70px;
     
@@ -200,9 +197,7 @@ button.hover {
 }
 
 .social-link_vk {
-    display: block;
-    width: 30;
-    height: 30;
+    
     top: 20px;
     left: 170px;
     
