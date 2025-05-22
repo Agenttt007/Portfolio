@@ -135,16 +135,16 @@ button.hover {
     overflow: hidden;
 }
 
-.span{
+.span {
     width: 50;
     height: 50;
     top: 20px;
     left: 20px;
-    border-radius: 50000000px;
+    border-radius: 50%;
     border-width: 1px;
     gap: 10px;
     padding: 10px;
-    
+
 }
 
 .span.hover {
@@ -159,11 +159,14 @@ button.hover {
     padding: 0;
     list-style-type: none;
 }
+
 .social li {
     display: inline-block;
     margin: 0;
     padding: 0;
 }
+
+
 
 footer {
     color: var(--bg-color);
