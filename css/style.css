@@ -171,6 +171,7 @@ button.hover {
     height: 30;
     top: 20px;
     left: 220px;
+    color: var(--second-color);
     background-image: img/social=gitlab.svg;
 }
 
