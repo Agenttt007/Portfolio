@@ -132,9 +132,9 @@ button:hover {
     border-radius: 50%;
 }
 
-.social-link:hover {
+/*.social-link:hover {
     background-color: var(--yellow);
-}
+}*/
 
 .visually-hidden {
     position: absolute;
