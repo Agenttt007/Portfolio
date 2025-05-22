@@ -122,11 +122,15 @@ button.hover {
     padding: 0;
 }
 
-social-link{
+.social-link {
     display: block;
     width: 30;
     height: 30;
     border-radius: 50%;
+}
+
+.social-link.hover {
+    background-color: var(--yellow);
 }
 
 .visually-hidden {
