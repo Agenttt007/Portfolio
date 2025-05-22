@@ -167,27 +167,19 @@ button.hover {
 }
 
 .social-link_gitlab {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    background-image: img/social=gitlab.svg;
 }
 
 .social-link_github {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    background-image: img/social=github.svg;
 }
 
 .social-link_telegram {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    background-image: img/social=telegram.svg;
 }
 
 .social-link_vk {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    background-image: img/social=vk.svg;
 }
 
 footer {
