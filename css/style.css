@@ -166,7 +166,29 @@ button.hover {
     padding: 0;
 }
 
+.social-link_gitlab {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 
+.social-link_github {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social-link_telegram {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social-link_vk {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 
 footer {
     color: var(--bg-color);
