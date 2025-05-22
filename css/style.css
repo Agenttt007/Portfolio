@@ -167,35 +167,46 @@ button.hover {
 }*/
 
 .social-link_gitlab {
+    display: block;
     width: 30;
     height: 30;
     top: 20px;
     left: 220px;
-    color: var(--second-color);
+    
+    border-radius: 50%;
     background-image: img/social=gitlab.svg;
 }
 
 .social-link_github {
+    display: block;
     width: 30;
     height: 30;
     top: 20px;
     left: 20px;
+    
+    border-radius: 50%;
     background-image: img/social=github.svg;
 }
 
 .social-link_telegram {
+    display: block;
     width: 30;
     height: 30;
     top: 20px;
     left: 70px;
+    
+    border-radius: 50%;
     background-image: img/social=telegram.svg;
 }
 
 .social-link_vk {
+    display: block;
     width: 30;
     height: 30;
     top: 20px;
     left: 170px;
+    
+    border-radius: 50%;
     background-image: img/social=vk.svg;
 }
 
