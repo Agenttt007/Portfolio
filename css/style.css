@@ -111,13 +111,15 @@ button:hover {
 }
 
 .social {
+    display: inline-block;
     margin: 0;
     padding: 0;
     list-style-type: none;
+    
 }
 
 .social li {
-    display: inline-block;
+    display: block;
     margin: 0;
     padding: 0;
 }
@@ -166,17 +168,13 @@ button:hover {
 
 }
 
-/*.social {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+.contact {
+    all: initial;
 }
 
-.social li {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}*/
+.contact-link {
+    all: initial;
+}
 
 .social-link_gitlab {
     
