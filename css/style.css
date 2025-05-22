@@ -174,8 +174,9 @@ button:hover {
 }
 
 .contact {
-    background-image: url('../img/ContactsIcon.svg');
+    
     all: initial;
+    background-image: url('../img/ContactsIcon.svg');
     width: 203;
     height: 30;
     top: 20px;
@@ -186,8 +187,9 @@ button:hover {
 }
 
 .contact-link {
-    background-image: url('../img/ContactsIconnn.svg');
+    
     all: initial;
+    background-image: url('../img/ContactsIconnn.svg');
     width: 177;
     height: 30;
     top: 20px;
