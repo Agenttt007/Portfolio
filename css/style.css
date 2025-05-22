@@ -23,7 +23,7 @@ body {
 }
 
 myphoto {
-    background-image: url('../img/photo_5291757754781920323_y.jpg')
+    background-image: url('../img/photo_5291757754781920323_y.jpg');
     border-radius: 50%;
 }
 
