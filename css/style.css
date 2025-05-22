@@ -174,22 +174,24 @@ button:hover {
 }
 
 .contact {
-    
-    all: initial;
     background-image: url('../img/ContactsIcon.svg');
+}
+
+.contact2 {
+    all: initial;
     width: 203;
     height: 30;
     top: 20px;
     left: 20px;
     gap: 12px;
-
-
 }
 
 .contact-link {
-    
-    all: initial;
     background-image: url('../img/ContactsIconnn.svg');
+}
+
+.contact-link2 {
+    all: initial;
     width: 177;
     height: 30;
     top: 20px;
