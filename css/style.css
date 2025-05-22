@@ -110,6 +110,10 @@ button:hover {
     background-color: var(--second-color);
 }
 
+.myphoto{
+    border-radius: 50%;
+}
+
 .social {
     display: inline-block;
     margin: 0;
