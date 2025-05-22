@@ -22,6 +22,10 @@ body {
 
 }
 
+body .myphoto {
+    border-radius: 50%;
+}
+
 h1 {
     font-family: "Open Sans";
     font-weight: 700;
@@ -108,10 +112,6 @@ button:hover {
     color: var(--bg-color);
     outline-color: var(--second-color);
     background-color: var(--second-color);
-}
-
-.myphoto{
-    border-radius: 50%;
 }
 
 .social {
