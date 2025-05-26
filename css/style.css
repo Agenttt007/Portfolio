@@ -209,7 +209,7 @@ button:hover {
     background-image: url('../img/social=gitlab.svg');
 }
 
-.social-link_gitlab:hover {}
+.social-link_gitlab:hover {background-color: var(#E5BB33);}
 
 
 .social-link_github {
@@ -222,7 +222,7 @@ button:hover {
     background-image: url('../img/social=github.svg');
 }
 
-.social-link_github:hover {}
+.social-link_github:hover {background-color: var(#E5BB33);}
 
 .social-link_telegram {
     width: 50px;
@@ -234,7 +234,7 @@ button:hover {
     background-image: url('../img/social=telegram.svg');
 }
 
-.social-link_telegram:hover {}
+.social-link_telegram:hover {background-color: var(#E5BB33);}
 
 .social-link_vk {
     width: 50px;
@@ -246,7 +246,7 @@ button:hover {
     background-image: url('../img/social=vk.svg');
 }
 
-.social-link_vk:hover {}
+.social-link_vk:hover {background-color: var(#E5BB33);}
 
 .skill-list {
     margin: 0;
