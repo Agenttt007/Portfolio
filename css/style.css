@@ -129,6 +129,8 @@ button:hover {
     height: 30px;
     top: 20px;
     border-radius: 50%;
+    background-repeat: 10px;
+    background-position: 1px;
 }
 
 /*.social-link:hover {
