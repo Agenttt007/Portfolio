@@ -16,7 +16,7 @@ body {
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 30px / 20px;
+    line-height: 150%;
     color: var(--txt-color);
     background-color: var(--bg-color);
 
@@ -26,12 +26,12 @@ h1 {
     font-family: "Open Sans";
     font-weight: 700;
     font-size: 60px;
-    line-height: 110.00000000000001%;
+    line-height: 110.01%;
     letter-spacing: 0;
 }
 
 .subtitle {
-    font-family: "Roboto";
+    font-family: "Open Sans";
     font-weight: 700;
     font-size: 16px;
     line-height: 100%;
@@ -99,8 +99,8 @@ button {
     /*cursor: pointer;*/
     text-transform: lowercase;
     outline-color: var(--bg-color);
-    border: 5px;
-    border-radius: 20px;
+    border: 1px solid var(--second-color);
+    border-radius: 10px;
 }
 
 button:hover {
@@ -263,5 +263,5 @@ button:hover {
 
 footer {
     color: var(--bg-color);
-    background-color: var(--blue);
+    background-color: var(--txt-color);
 }
