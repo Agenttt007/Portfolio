@@ -27,7 +27,7 @@ h1 {
     font-weight: 700;
     font-size: 60px;
     line-height: 110.00000000000001%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
 }
 
 .subtitle {
@@ -35,7 +35,7 @@ h1 {
     font-weight: 700;
     font-size: 16px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
 }
 
 .container {
@@ -50,7 +50,7 @@ h2 {
     font-weight: 700;
     font-size: 30px;
     line-height: 120%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
 }
 
 h3 {
@@ -58,7 +58,7 @@ h3 {
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
 }
 
 a {
@@ -66,7 +66,7 @@ a {
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     display: inline-block;
     text-decoration: none;
@@ -84,7 +84,7 @@ a:hover {
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
 }*/
 
 button {
