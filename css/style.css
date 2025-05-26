@@ -24,7 +24,7 @@ body {
 
 h1 {
     font-family: "Open Sans";
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 60px;
     line-height: 110.01%;
     letter-spacing: 0;
@@ -32,7 +32,7 @@ h1 {
 
 .subtitle {
     font-family: "Open Sans";
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0;
@@ -47,7 +47,7 @@ h1 {
 
 h2 {
     font-family: "Open Sans";
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 30px;
     line-height: 120%;
     letter-spacing: 0;
@@ -55,7 +55,7 @@ h2 {
 
 h3 {
     font-family: "Open Sans";
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 24px;
     line-height: 120%;
     letter-spacing: 0;
@@ -63,7 +63,7 @@ h3 {
 
 a {
     font-family: "Open Sans";
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0;
@@ -125,8 +125,8 @@ button:hover {
 
 .social-link {
     display: block;
-    width: 30;
-    height: 30;
+    width: 30px;
+    height: 30px;
     top: 20px;
     border-radius: 50%;
 }
@@ -149,8 +149,8 @@ button:hover {
 }
 
 .span {
-    width: 50;
-    height: 50;
+    width: 50px;
+    height: 50px;
     top: 20px;
     left: 20px;
     border-radius: 50%;
