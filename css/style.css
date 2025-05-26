@@ -14,7 +14,7 @@
 
 body {
     font-family: "Open Sans", "Arial", sans-serif;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 20px;
     line-height: 150%;
     color: var(--txt-color);
