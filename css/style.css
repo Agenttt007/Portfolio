@@ -297,6 +297,16 @@ ul {
     border-radius: 8px;
 }
 
+.section p {
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+
+
+}
+
 .skill-item {
     text-transform: lowercase;
 }
