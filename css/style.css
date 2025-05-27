@@ -39,10 +39,12 @@ h1 {
 }
 
 .container {
-    min-width: 520px;
+    min-width: 320px;
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
+    height: 150px;
+    border: 4px;
 }
 
 h2 {
