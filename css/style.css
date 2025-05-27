@@ -204,7 +204,7 @@ ul {
     padding: 10px;
     background-repeat: no-repeat;
     background-position: center;
-    border-width: 20px solid var(--second-color);
+    border: 1px solid var(--second-color);
     background-image: url('../img/social=gitlab.svg');
 }
 
@@ -222,7 +222,7 @@ ul {
     padding: 10px;
     background-repeat: no-repeat;
     background-position: center;
-    border-width: 20px solid var(--second-color);
+    border: 1px solid var(--second-color);
     background-image: url('../img/social=github.svg');
 }
 
@@ -238,7 +238,9 @@ ul {
     border-radius: 50px;
     border-width: 1px;
     padding: 10px;
-    border-width: 20px solid var(--second-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid var(--second-color);
     background-image: url('../img/social=telegram.svg');
 }
 
@@ -254,6 +256,9 @@ ul {
     border-radius: 50px;
     border-width: 1px;
     padding: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid var(--second-color);
     background-image: url('../img/social=vk.svg');
 }
 
