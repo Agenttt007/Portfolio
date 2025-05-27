@@ -300,6 +300,14 @@ ul {
     border-radius: 8px;
 }
 
+.section-intro p{
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
 .section p {
     font-family: Open Sans;
     font-weight: 400;
