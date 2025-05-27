@@ -61,11 +61,9 @@ h3 {
     letter-spacing: 0;
 }
 
-main-header img{
+img{
     display: inline-block;
-    
 }
-
 a {
     font-family: "Open Sans";
     font-weight: 400;
