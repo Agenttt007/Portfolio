@@ -64,6 +64,7 @@ h3 {
 img{
     display: inline-block;
 }
+
 a {
     font-family: "Open Sans";
     font-weight: 400;
@@ -166,7 +167,7 @@ ul {
     overflow: hidden;
 }
 
-.span {
+span {
     width: 50px;
     height: 50px;
     top: 20px;
@@ -308,14 +309,12 @@ ul {
     letter-spacing: 0%;
 }
 
-.section p {
+.name_profes {
     font-family: Open Sans;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 0%;
-
-
 }
 
 .skill-item {
