@@ -322,19 +322,19 @@ span {
 }
 
 .skill-item_html {
-    background-image: url("../img/skills/html.svg");
+    background-image: url("../img/html.svg");
 }
 
 .skill-item_css {
-    background-image: url("../img/skills/css.svg");
+    background-image: url("../img/css.svg");
 }
 
 .skill-item_cpp {
-    background-image: url("../img/skills/c++.svg");
+    background-image: url("../img/c++.svg");
 }
 
 .skill-item_python {
-    background-image: url("../img/skills/python.svg");
+    background-image: url("../img/python.svg");
 }
 
 footer {
