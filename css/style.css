@@ -126,7 +126,6 @@ ul {
 .social li {
     display: inline-block;
     margin: 0;
-    padding: 0;
     margin-right: 35px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -188,12 +187,16 @@ ul {
 }
 
 .contact {
-
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: left;
     background-image: url('../img/ContactsIcon.svg');
 }
 
 .contact-link2 {
-
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: left;
     background-image: url('../img/ContactsIconnn.svg');
 }
 
