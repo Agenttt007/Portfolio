@@ -131,17 +131,14 @@ ul {
     background-position: 50% 50%;
 }
 
-/*.social-link li {
-    display: inline-block;
+.social {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
-    margin-right: 15px;
-    background-repeat: repeat;
-    background-position: 50% 50%;
-}*/
+}
 
 .social li {
     display: inline-block;
-    /*list-style-type: none;*/
     width: 30px;
     height: 30px;
     border-radius: 50%;
