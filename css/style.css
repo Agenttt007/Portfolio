@@ -163,25 +163,6 @@ ul {
     overflow: hidden;
 }
 
-span {
-    /*width: 50px;
-    height: 50px;*/
-    top: 20px;
-    left: 20px;
-    border-radius: 50%;
-    border-width: 1px;
-    gap: 10px;
-    padding: 10px;
-
-}
-
-.span:hover {
-    color: var(--bg-color);
-    outline-color: var(--second-color);
-    background-color: var(--second-color);
-
-}
-
 .myphoto {
     border-radius: 50%;
 }
@@ -200,7 +181,7 @@ span {
     background-image: url('../img/ContactsIconnn.svg');
 }
 
-.social-link_gitlab {
+.social-link {
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -208,65 +189,26 @@ span {
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid var(--second-color);
+}
+
+.social-link:hover {
+    background-color: var(--yellow);
+}
+
+.social-link_gitlab {
     background-image: url('../img/social=gitlab.svg');
 }
 
-.social-link_gitlab:hover {
-    background-color: var(--yellow);
-}
-
-
 .social-link_github {
-    width: 50px;
-    height: 50px;
-    border-left: 25px solid var(--bg-color);
-    border-radius: 50px;
-    border-width: 1px;
-    padding: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 1px solid var(--second-color);
     background-image: url('../img/social=github.svg');
 }
 
-.social-link_github:hover {
-    background-color: var(--yellow);
-}
-
 .social-link_telegram {
-    width: 50px;
-    height: 50px;
-    gap: 10px;
-    border-left: 25px solid var(--bg-color);
-    border-radius: 50px;
-    border-width: 1px;
-    padding: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 1px solid var(--second-color);
     background-image: url('../img/social=telegram.svg');
 }
 
-.social-link_telegram:hover {
-    background-color: var(--yellow);
-}
-
 .social-link_vk {
-    width: 50px;
-    height: 50px;
-    gap: 10px;
-    border-left: 25px solid var(--bg-color);
-    border-radius: 50px;
-    border-width: 1px;
-    padding: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 1px solid var(--second-color);
     background-image: url('../img/social=vk.svg');
-}
-
-.social-link_vk:hover {
-    background-color: var(--yellow);
 }
 
 .skill-list {
