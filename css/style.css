@@ -109,7 +109,7 @@ button:hover {
     background-color: var(--second-color);
 }
 
-.social {
+.contacts {
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -123,7 +123,7 @@ ul {
     padding: 0;
 }
 
-.social li {
+.contacts li {
     display: inline-block;
     margin: 0;
     margin-right: 35px;
@@ -139,7 +139,7 @@ ul {
     background-position: 50% 50%;
 }*/
 
-.social-link li {
+.social li {
     display: inline-block;
     /*list-style-type: none;*/
     width: 30px;
@@ -164,8 +164,8 @@ ul {
 }
 
 span {
-    width: 50px;
-    height: 50px;
+    /*width: 50px;
+    height: 50px;*/
     top: 20px;
     left: 20px;
     border-radius: 50%;
@@ -212,7 +212,7 @@ span {
 }
 
 .social-link_gitlab:hover {
-    background-color: var(#E5BB33);
+    background-color: var(--yellow);
 }
 
 
@@ -230,7 +230,7 @@ span {
 }
 
 .social-link_github:hover {
-    background-color: var(#E5BB33);
+    background-color: var(--yellow);
 }
 
 .social-link_telegram {
@@ -248,7 +248,7 @@ span {
 }
 
 .social-link_telegram:hover {
-    background-color: var(#E5BB33);
+    background-color: var(--yellow);
 }
 
 .social-link_vk {
@@ -266,13 +266,13 @@ span {
 }
 
 .social-link_vk:hover {
-    background-color: var(#E5BB33);
+    background-color: var(--yellow);
 }
 
 .skill-list {
     margin: 0;
     padding: 0;
-    line-height: 100%;
+    line-height: 1;
 }
 
 .skill-list dt {
@@ -284,11 +284,12 @@ span {
 }
 
 .skill-level {
-    margin: 0 0 0;
-    padding: 0;
+    margin: 4px 0 20px;
+    padding: 2px;
     font-size: 0;
     border: 1px solid var(--blue);
     border-radius: 16px;
+
 }
 
 .skill-level div {
