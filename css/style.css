@@ -205,6 +205,15 @@ ul {
     border: 1px solid var(--second-color);
 }
 
+.section-skills{
+    display: flex;
+    
+}
+
+.section-skills-button-sort{
+    justify-content: flex-end;
+}
+
 .social-link:hover {
     background-color: var(--second-color);
 }
