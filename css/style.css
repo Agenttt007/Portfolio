@@ -92,6 +92,15 @@ img {
     color: var(--second-color);
 }
 
+p{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+p:last-child{
+    margin-bottom: 0;
+}
+
 button {
     padding: 0;
     border: none;
