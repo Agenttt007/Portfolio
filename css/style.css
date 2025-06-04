@@ -207,7 +207,7 @@ ul {
 
 .section-skills{
     display: flex;
-    
+    margin-bottom: 40px;
 }
 
 .section-skills-button-sort{
