@@ -64,20 +64,24 @@ img {
 
 .main-header {
     display: flex;
+    /*flex-direction: row;*/
     padding-top: 60px;
     gap: 40px;
     align-items: center;
 }
 
-
+.main-nav {
+    display: flex;
+    flex-direction: row;
+}
 
 .main-nav a {
+    display: flex;
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0;
     text-align: center;
-    display: flex;
     text-decoration: none;
     padding: 10px 15px;
     color: var(--txt-color);
@@ -242,6 +246,7 @@ ul {
 
 .section-intro {
     display: flex;
+
     gap: 70px;
 }
 
