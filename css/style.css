@@ -246,7 +246,7 @@ ul {
 
 .section-intro {
     display: flex;
-
+    align-items: center;
     gap: 70px;
 }
 
