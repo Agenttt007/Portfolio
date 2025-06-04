@@ -211,6 +211,7 @@ ul {
 }
 
 .highlight{
+    display: flex;
     justify-content: flex-end;
 }
 
