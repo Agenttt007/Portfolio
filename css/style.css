@@ -250,6 +250,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 70px;
+    justify-content: space-between;
 }
 
 
