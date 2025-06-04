@@ -205,13 +205,17 @@ ul {
     border: 1px solid var(--second-color);
 }
 
-.section-skills{
+.section-skills-hat{
     display: flex;
     margin-bottom: 40px;
 }
 
-.section-skills-button-sort{
+.highlight{
     justify-content: flex-end;
+}
+
+.section-skills-button-sort{
+    /*justify-content: flex-end;*/
 }
 
 .social-link:hover {
