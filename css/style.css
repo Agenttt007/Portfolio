@@ -69,13 +69,15 @@ img {
     align-items: center;
 }
 
+
+
 .main-nav a {
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0;
     text-align: center;
-    display: inline-block;
+    display: flex;
     text-decoration: none;
     padding: 10px 15px;
     color: var(--txt-color);
@@ -237,6 +239,13 @@ ul {
     background-color: var(--second-color);
     border-radius: 8px;
 }
+
+.section-intro {
+    display: flex;
+    gap: 70px;
+}
+
+
 
 .section-intro p {
     font-family: Open Sans;
