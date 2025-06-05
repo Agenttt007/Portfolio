@@ -92,12 +92,12 @@ img {
     color: var(--second-color);
 }
 
-p{
+p {
     margin: 0;
     margin-bottom: 15px;
 }
 
-p:last-child{
+p:last-child {
     margin-bottom: 0;
 }
 
@@ -205,17 +205,17 @@ ul {
     border: 1px solid var(--second-color);
 }
 
-.section-skills-hat{
+.section-skills-hat {
     display: flex;
     margin-bottom: 40px;
 }
 
-.highlight{
+.highlight {
     display: flex;
     justify-content: flex-end;
 }
 
-.section-skills-button-sort{
+.section-skills-button-sort {
     /*justify-content: flex-end;*/
 }
 
@@ -286,7 +286,7 @@ ul {
     margin: 0;
 }
 
-.text-wrapper{
+.text-wrapper {
     max-width: 1240px;
 }
 
