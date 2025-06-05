@@ -123,10 +123,10 @@ button:hover {
 }
 
 .contacts {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
     list-style-type: none;
+    display: flex;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 ul {
@@ -212,10 +212,12 @@ ul {
 
 .highlight {
     display: flex;
+    /*align-items: center;*/
     justify-content: flex-end;
 }
 
 .section-skills-button-sort {
+    /*display: flex;*/
     /*justify-content: flex-end;*/
 }
 
@@ -274,8 +276,6 @@ ul {
     gap: 70px;
     justify-content: space-between;
 }
-
-
 
 .section-intro p {
     font-family: Open Sans;
