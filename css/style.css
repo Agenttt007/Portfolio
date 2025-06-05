@@ -318,6 +318,11 @@ ul {
     background-image: url("../img/python.svg");
 }
 
+.container-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 footer {
     color: var(--bg-color);
     background-color: var(--txt-color);
