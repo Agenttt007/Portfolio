@@ -212,13 +212,13 @@ ul {
 
 .highlight {
     display: flex;
-    /*align-items: center;*/
+    align-items: center;
     justify-content: flex-end;
 }
 
 .section-skills-button-sort {
-    /*display: flex;*/
-    /*justify-content: flex-end;*/
+    display: flex;
+    justify-content: flex-end;
 }
 
 .social-link:hover {
