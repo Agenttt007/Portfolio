@@ -298,6 +298,10 @@ ul {
     letter-spacing: 0%;
 }
 
+.margin-bottom {
+    margin-bottom: 120px;
+}
+
 .skill-item {
     text-transform: lowercase;
 }
