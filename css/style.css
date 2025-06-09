@@ -217,6 +217,10 @@ ul {
     justify-content: flex-end;
 }
 
+.skills-button-sort {
+    margin-left: 20px;
+}
+
 .section-skills-button-sort {
     display: flex;
     justify-content: flex-end;
