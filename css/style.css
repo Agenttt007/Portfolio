@@ -205,9 +205,10 @@ ul {
     border: 1px solid var(--second-color);
 }
 
-.section-skills-hat {
+.section-skills-haader {
     display: flex;
     margin-bottom: 40px;
+    justify-content: space-between;
 }
 
 .highlight {
