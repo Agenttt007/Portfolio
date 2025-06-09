@@ -27,7 +27,7 @@ h1 {
     font-size: 60px;
     line-height: 110.01%;
     letter-spacing: 0;
-    margin: 120px 0 40px 0;
+    margin: 0 0 20px 0;
 }
 
 .subtitle {
@@ -50,6 +50,8 @@ h2 {
     font-size: 30px;
     line-height: 120%;
     letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 40px;
 }
 
 h3 {
@@ -134,6 +136,12 @@ ul {
 }
 
 .contacts li {
+    list-style-type: none;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
     display: inline-block;
     margin: 0;
     margin-right: 35px;
@@ -182,10 +190,14 @@ ul {
 }
 
 .contact-link_number_phone {
+    text-decoration: none;
+    color: #212121;
     background-image: url('../img/ContactsIcon.svg');
 }
 
 .contact-link_my_email {
+    text-decoration: none;
+    color: #212121;
     background-image: url('../img/ContactsIconnn.svg');
 }
 
@@ -207,13 +219,13 @@ ul {
 
 .section-skills-haader {
     display: flex;
-    margin-bottom: 40px;
+    /*margin-bottom: 40px;*/
     justify-content: space-between;
 }
 
 .highlight {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: flex-end;
 }
 
@@ -262,7 +274,7 @@ ul {
 
 .skill-level {
     margin: 4px 0 20px;
-    padding: 2px;
+    padding: 1px;
     font-size: 0;
     border: 1px solid var(--blue);
     border-radius: 16px;
@@ -292,7 +304,7 @@ ul {
 }
 
 .text-wrapper {
-    max-width: 1240px;
+    max-width: 800px;
 }
 
 .name_profes {
