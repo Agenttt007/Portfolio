@@ -128,7 +128,8 @@ button:hover {
     list-style-type: none;
     display: flex;
     margin: 0;
-    margin-bottom: 40px;
+    column-gap: 40px;
+    /*margin-bottom: 40px;*/
 }
 
 ul {
@@ -144,7 +145,7 @@ ul {
     letter-spacing: 0%;
     display: inline-block;
     margin: 0;
-    margin-right: 35px;
+    /*margin-right: 35px;*/
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -227,14 +228,17 @@ ul {
     display: flex;
     align-items: start;
     justify-content: flex-end;
+    column-gap: 20px;
 }
 
 .skills-button-sort {
-    margin-left: 20px;
+    display: flex;
+
 }
 
 .section-skills-button-sort {
     display: flex;
+    column-gap: 20px;
     justify-content: flex-end;
 }
 
