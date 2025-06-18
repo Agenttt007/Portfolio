@@ -389,6 +389,13 @@ footer {
     .name_profes{
         font-size: 28px;
     }
+    main-logo{
+        width: 40px;
+        height: 40px;
+    }
+    main-header margin-bottom{
+        flex-direction: column;
+    }
     /* переопределение свойств */
 }
 
@@ -420,6 +427,13 @@ footer {
     }
     .name_profes{
         font-size: 28px;
+    }
+    main-logo{
+        width: 40px;
+        height: 40px;
+    }
+    main-header margin-bottom{
+        flex-direction: column;
     }
     /* переопределение свойств */
 }
