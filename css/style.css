@@ -103,6 +103,11 @@ p:last-child {
     margin-bottom: 0;
 }
 
+.main-logo {
+    width: 60px;
+    height: 60px;
+}
+
 button {
     padding: 0;
     border: none;
@@ -393,10 +398,10 @@ footer {
         width: 40px;
         height: 40px;
     }
-    main-header margin-bottom{
+    .main-header margin-bottom{
         flex-direction: column;
     }
-    main-nav{
+    .main-nav{
         flex-direction: column;
     }
     /* переопределение свойств */
@@ -435,10 +440,10 @@ footer {
         width: 40px;
         height: 40px;
     }
-    main-header margin-bottom{
+    .main-header margin-bottom{
         flex-direction: column;
     }
-    main-nav{
+    .main-nav{
         flex-direction: column;
     }
     /* переопределение свойств */
