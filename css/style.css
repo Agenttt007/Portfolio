@@ -360,3 +360,15 @@ footer {
     color: var(--bg-color);
     background-color: var(--txt-color);
 }
+
+@media screen and (max-width: 1024px) {
+    /* переопределение свойств */
+}
+
+@media screen and (max-width: 650px) {
+    /* переопределение свойств */
+}
+
+@media screen and (max-width: 360px) {
+    /* переопределение свойств */
+}
