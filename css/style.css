@@ -73,11 +73,6 @@ img {
     align-items: center;
 }
 
-.main-nav {
-    display: flex;
-    flex-direction: row;
-}
-
 .main-nav a {
     display: flex;
     font-weight: 400;
@@ -356,11 +351,6 @@ ul {
     padding-bottom: 50px;
 }
 
-footer {
-    color: var(--bg-color);
-    background-color: var(--txt-color);
-}
-
 @media screen and (max-width: 1024px) {
     h1 {
         font-size: 50px;
@@ -448,3 +438,10 @@ footer {
     
     /* переопределение свойств */
 }
+
+footer {
+    color: var(--bg-color);
+    background-color: var(--txt-color);
+}
+
+
