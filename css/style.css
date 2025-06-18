@@ -362,13 +362,69 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    body{
+        font-size: 16px;
+    }
+    .subtitle{
+        font-size: 16px;
+    }
+    .main-nav a{
+        font-size: 16px;
+    }
+    .contacts li{
+        font-size: 16px;
+    }
+    .section-intro p{
+        font-size: 28px;
+    }
+    .name_profes{
+        font-size: 28px;
+    }
     /* переопределение свойств */
 }
 
 @media screen and (max-width: 650px) {
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    body{
+        font-size: 14px;
+    }
+    .subtitle{
+        font-size: 16px;
+    }
+    .main-nav a{
+        font-size: 14px;
+    }
+    }
+    .contacts li{
+        font-size: 14px;
+    }
+    .section-intro p{
+        font-size: 20px;
+    }
+    .name_profes{
+        font-size: 28px;
+    }
     /* переопределение свойств */
 }
 
 @media screen and (max-width: 360px) {
+    
     /* переопределение свойств */
 }
