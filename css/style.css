@@ -396,6 +396,9 @@ footer {
     main-header margin-bottom{
         flex-direction: column;
     }
+    main-nav{
+        flex-direction: column;
+    }
     /* переопределение свойств */
 }
 
@@ -433,6 +436,9 @@ footer {
         height: 40px;
     }
     main-header margin-bottom{
+        flex-direction: column;
+    }
+    main-nav{
         flex-direction: column;
     }
     /* переопределение свойств */
