@@ -535,6 +535,63 @@ ul {
     /* переопределение свойств */
 }
 
+@media screen and (max-width: 511px) {}
+
+@media screen and (max-width: 420px) {
+    .section-skills-haader {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .highlight {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-skills-button-sort {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .skills-button-sort {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .skill-list {
+        margin-top: 30px;
+    }
+
+    .contact-link {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        display: flex;
+        padding-left: 42px;
+        /*align-items: center;*/
+        /*justify-content: center;*/
+    }
+
+    .contacts {
+        column-gap: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-link_my_email {
+        margin-top: 15px;
+    }
+
+    .social-link {
+        margin-top: 20px;
+    }
+
+    /* переопределение свойств */
+}
+
 @media screen and (max-width: 360px) {
     .section-skills-haader {
         display: flex;
@@ -580,7 +637,11 @@ ul {
     }
 
     .contact-link_my_email {
-        padding-top: 15px;
+        margin-top: 15px;
+    }
+
+    .social-link {
+        margin-top: 20px;
     }
 
     /* переопределение свойств */
