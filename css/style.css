@@ -130,6 +130,7 @@ button:hover {
     display: flex;
     margin: 0;
     column-gap: 40px;
+    flex-wrap: wrap;
     /*margin-bottom: 40px;*/
 }
 
@@ -250,6 +251,7 @@ ul {
     column-gap: 20px;
     justify-content: flex-end;
 }
+
 
 .social-link:hover {
     background-color: var(--second-color);
@@ -530,6 +532,13 @@ ul {
 
     .social-link {
         margin-top: 30px;
+    }
+
+    .contact-link {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        /*align-items: center;*/
+        /*justify-content: center;*/
     }
 
     /* переопределение свойств */
