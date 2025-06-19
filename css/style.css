@@ -316,6 +316,7 @@ ul {
     line-height: 120%;
     letter-spacing: 0%;
     margin: 0;
+    color: #09A494;
 }
 
 .text-wrapper {
@@ -400,61 +401,23 @@ ul {
         font-size: 28px;
     }
 
-    .main-logo {
-        width: 60px;
-        height: 60px;
-        display: flex;
-        align-self: center;
+    .section-intro {
+        margin-bottom: 80px;
     }
 
-    .main-header-wrap {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
 
-    .nav-btn {
-        display: block;
-        width: 60px;
-        height: 60px;
-    }
-
-    .nav-btn_close {
-        background-image: url(../img/burger.svg);
-    }
-
-    .nav-btn_open {
-        background-image: url(../img/close.svg);
-    }
-
-    .main-header {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .main-nav {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .main-nav a {
-        display: flex;
-        align-self: center;
-    }
 
     .myphoto {
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
     }
 
-    .section-intro {
+    /*.section-intro {
         display: flex;
         flex-direction: column-reverse;
         gap: 30px;
         text-align: center;
-    }
+    }*/
 
     /* переопределение свойств */
 }
@@ -497,6 +460,43 @@ ul {
         font-size: 28px;
     }
 
+    .main-header-wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-btn {
+        display: block;
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav-btn_close {
+        background-image: url(../img/burger.svg);
+    }
+
+    .nav-btn_open {
+        background-image: url(../img/close.svg);
+    }
+
+    .main-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .main-nav a {
+        display: flex;
+        align-self: center;
+    }
+
     .main-logo {
         width: 40px;
         height: 40px;
@@ -528,6 +528,7 @@ ul {
         flex-direction: column-reverse;
         gap: 30px;
         text-align: center;
+        margin-bottom: 80px;
     }
 
     .social-link {
@@ -537,8 +538,14 @@ ul {
     .contact-link {
         padding-top: 8px;
         padding-bottom: 8px;
-        /*align-items: center;*/
-        /*justify-content: center;*/
+    }
+
+    .container-footer {
+        display: flex;
+        /*padding: 30px 430px 30px 20px;*/
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-bottom: 30px;
     }
 
     /* переопределение свойств */
