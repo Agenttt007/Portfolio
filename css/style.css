@@ -405,9 +405,30 @@ ul {
         align-self: center;
     }
 
+    .main-header-wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-btn {
+        display: block;
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav-btn_close {
+        background-image: url(../img/burger.svg);
+    }
+
+    .nav-btn_open {
+        background-image: url(../img/close.svg);
+    }
+
     .main-header {
         flex-direction: column;
-
+        gap: 20px;
     }
 
     .main-nav {
