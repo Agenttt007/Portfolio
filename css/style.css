@@ -528,7 +528,9 @@ ul {
         text-align: center;
     }
 
-
+    .social-link {
+        margin-top: 30px;
+    }
 
     /* переопределение свойств */
 }
@@ -562,14 +564,26 @@ ul {
         margin-top: 30px;
     }
 
-    /*.skills-button-sort {
-    justify-content: center;
-        text-align: center;
-    }*/
+    .contact-link {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        display: flex;
+        padding-left: 42px;
+        /*align-items: center;*/
+        /*justify-content: center;*/
+    }
 
+    .contacts {
+        column-gap: 0;
+        display: flex;
+        flex-direction: column;
+    }
 
+    .contact-link_my_email {
+        padding-top: 15px;
+    }
 
-    /* flex-direction: column; width: 100%; переопределение свойств */
+    /* переопределение свойств */
 }
 
 footer {
