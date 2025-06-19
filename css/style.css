@@ -442,6 +442,18 @@ ul {
         align-self: center;
     }
 
+    .myphoto {
+        width: 150px;
+        height: 150px;
+    }
+
+    .section-intro {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
+    }
+
     /* переопределение свойств */
 }
 
@@ -452,6 +464,7 @@ ul {
 
     h2 {
         font-size: 20px;
+        margin-bottom: 30px;
     }
 
     h3 {
@@ -501,7 +514,18 @@ ul {
     .main-nav {
         display: flex;
         flex-direction: column;
+    }
 
+    .myphoto {
+        width: 150px;
+        height: 150px;
+    }
+
+    .section-intro {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
     }
 
 
@@ -510,8 +534,42 @@ ul {
 }
 
 @media screen and (max-width: 360px) {
+    .section-skills-haader {
+        display: flex;
+        flex-direction: column;
+    }
 
-    /* переопределение свойств */
+    .highlight {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-skills-button-sort {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .skills-button-sort {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .skill-list {
+        margin-top: 30px;
+    }
+
+    /*.skills-button-sort {
+    justify-content: center;
+        text-align: center;
+    }*/
+
+
+
+    /* flex-direction: column; width: 100%; переопределение свойств */
 }
 
 footer {
