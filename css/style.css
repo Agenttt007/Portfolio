@@ -67,10 +67,15 @@ img {
 
 .main-header {
     display: flex;
-    /*flex-direction: row;*/
+    flex-direction: row;
     padding-top: 60px;
     gap: 40px;
-    align-items: center;
+    /*align-items: center;*/
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
 }
 
 .main-nav a {
@@ -79,6 +84,7 @@ img {
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0;
+
     text-align: center;
     text-decoration: none;
     padding: 10px 15px;
@@ -355,41 +361,62 @@ ul {
     h1 {
         font-size: 50px;
     }
+
     h2 {
         font-size: 24px;
     }
-    h3{
+
+    h3 {
         font-size: 18px;
     }
-    body{
+
+    body {
         font-size: 16px;
     }
-    .subtitle{
+
+    .subtitle {
         font-size: 16px;
     }
-    .main-nav a{
+
+    .main-nav a {
         font-size: 16px;
     }
-    .contacts li{
+
+    .contacts li {
         font-size: 16px;
     }
-    .section-intro p{
+
+    .section-intro p {
         font-size: 28px;
     }
-    .name_profes{
+
+    .name_profes {
         font-size: 28px;
     }
-    .main-logo{
-        width: 40px;
-        height: 40px;
+
+    .main-logo {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-self: center;
     }
-    .main-header margin-bottom{
+
+    .main-header {
         flex-direction: column;
+
     }
-    .main-nav{
+
+    .main-nav {
         display: flex;
         flex-direction: column;
+
     }
+
+    .main-nav a {
+        display: flex;
+        align-self: center;
+    }
+
     /* переопределение свойств */
 }
 
@@ -397,47 +424,68 @@ ul {
     h1 {
         font-size: 32px;
     }
+
     h2 {
         font-size: 20px;
     }
-    h3{
+
+    h3 {
         font-size: 16px;
     }
-    body{
+
+    body {
         font-size: 14px;
     }
-    .subtitle{
+
+    .subtitle {
         font-size: 16px;
     }
-    .main-nav a{
+
+    .main-nav a {
         font-size: 14px;
     }
-    }
-    .contacts li{
+
+    .contacts li {
         font-size: 14px;
     }
-    .section-intro p{
+
+    .section-intro p {
         font-size: 20px;
     }
-    .name_profes{
+
+    .name_profes {
         font-size: 28px;
     }
-    .main-logo{
+
+    .main-logo {
         width: 40px;
         height: 40px;
-    }
-    .main-header margin-bottom{
+        /*text-align: center;*/
         flex-direction: column;
     }
-    .main-nav{
+
+    .main-header {
+        padding-top: 20px;
+    }
+
+    .main-header margin-bottom {
+        flex-direction: column;
+
+    }
+
+    .main-nav {
         display: flex;
         flex-direction: column;
+
     }
+
+
+
     /* переопределение свойств */
 }
 
 @media screen and (max-width: 360px) {
-    
+
     /* переопределение свойств */
 }
 
@@ -445,5 +493,3 @@ footer {
     color: var(--bg-color);
     background-color: var(--txt-color);
 }
-
-
