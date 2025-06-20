@@ -685,6 +685,10 @@ ul {
 
     }
 
+    .section-intro div {
+        flex-wrap: wrap;
+    }
+
     .skills-button-sort {
         width: 100%;
         justify-content: center;
@@ -692,7 +696,7 @@ ul {
     }
 
     .skill-list {
-        margin-top: 30px;
+        margin-top: 150px;
     }
 
     .contact-link {
