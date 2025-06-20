@@ -385,6 +385,10 @@ ul {
         font-size: 16px;
     }
 
+    .main-header-wrap {
+        height: 60px;
+    }
+
     .main-nav a {
         font-size: 16px;
     }
@@ -405,12 +409,35 @@ ul {
         margin-bottom: 80px;
     }
 
+    .main-nav {
+        display: flex;
+        align-items: center;
+    }
 
+    .margin-bottom {
+        margin-bottom: 80px;
+    }
+
+    .skill-level {
+        padding: 2px;
+    }
+
+    .skill-list dt {
+        padding: 6px 0 6px 38px;
+    }
 
     .myphoto {
         width: 250px;
         height: 250px;
     }
+
+    .contact-link {
+        display: flex;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+
 
     /*.section-intro {
         display: flex;
