@@ -473,6 +473,7 @@ ul {
 
     .main-nav a {
         font-size: 14px;
+        margin-top: 20px;
     }
 
     .contacts li {
@@ -488,29 +489,32 @@ ul {
     }
 
     .main-header-wrap {
+        height: 40px;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
     }
 
     .nav-btn {
         display: block;
-        width: 60px;
-        height: 60px;
+        width: 30px;
+        height: 30px;
     }
 
     .nav-btn_close {
-        background-image: url(../img/burger.svg);
+        background-image: url(../img/close.svg);
     }
 
     .nav-btn_open {
-        background-image: url(../img/close.svg);
+        background-image: url(../img/burger.svg);
     }
 
     .main-header {
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
+        margin-bottom: 55px;
     }
 
     .main-nav {
@@ -548,6 +552,7 @@ ul {
     .myphoto {
         width: 150px;
         height: 150px;
+        margin-top: 5px;
     }
 
     .section-intro {
@@ -555,11 +560,37 @@ ul {
         flex-direction: column-reverse;
         gap: 30px;
         text-align: center;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
+    }
+
+    .section-about {
+        margin-bottom: 50px;
+    }
+
+    .section-intro h1 {
+        margin-bottom: 10px;
+    }
+
+    .section-skills-haader {
+        height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .skill-level {
+        margin-bottom: 22px;
+    }
+
+    .section-skills {
+        margin-bottom: 50px;
+    }
+
+    .margin-bottom_part3,
+    .margin-bottom_part4 {
+        margin-bottom: 50px;
     }
 
     .social-link {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .contact-link {
