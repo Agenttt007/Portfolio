@@ -139,8 +139,7 @@ button:hover {
     display: flex;
     margin: 0;
     column-gap: 40px;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 ul {
@@ -166,9 +165,8 @@ ul {
     padding: 0;
     list-style-type: none;
     display: flex;
-
+    flex-wrap: wrap;
     column-gap: 20px;
-
 }
 
 .social li {
@@ -198,7 +196,7 @@ ul {
 }
 
 .contact-link {
-    padding-left: 40px;
+    padding-left: 43px;
     background-repeat: no-repeat;
     background-position: left;
 
