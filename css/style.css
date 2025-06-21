@@ -166,13 +166,8 @@ ul {
 
 .social li {
     display: inline-block;
-
-    /*width: 30px;
-    height: 30px;*/
-
+    flex-wrap: wrap;
     border-radius: 50%;
-    /*row-gap: 40px;*/
-    /*margin-right: 20px;*/
     background-repeat: repeat;
     background-position: 50% 50%;
 
@@ -224,7 +219,6 @@ ul {
     gap: 10px;
     border-radius: 50px;
     border-width: 1px;
-    margin-top: 40px;
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid var(--second-color);
@@ -722,7 +716,7 @@ ul {
     }
 
     .social-link {
-        margin-top: 20px;
+        /*margin-top: 20px;*/
     }
 
     /* переопределение свойств */
