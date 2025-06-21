@@ -118,7 +118,7 @@ button {
     color: inherit;
     background-color: transparent;
     cursor: pointer;
-    padding: 6px 10px 10px;
+    padding: 6px 10px;
     color: var(--second-color);
     background-color: var(--bg-color);
     text-transform: lowercase;
