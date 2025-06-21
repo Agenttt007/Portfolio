@@ -67,6 +67,10 @@ img {
     display: inline-block;
 }
 
+.margin-bottom {
+    margin-bottom: 120px;
+}
+
 .main-header {
     display: flex;
     flex-direction: row;
@@ -329,9 +333,7 @@ ul {
     letter-spacing: 0%;
 }
 
-.margin-bottom {
-    margin-bottom: 120px;
-}
+
 
 .skill-item {
     text-transform: lowercase;
