@@ -244,6 +244,7 @@ ul {
     justify-content: flex-end;
     height: 36px;
     column-gap: 20px;
+    align-items: center;
 }
 
 .skills-button-sort {
