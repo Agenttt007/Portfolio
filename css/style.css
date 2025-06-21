@@ -252,6 +252,7 @@ ul {
     display: flex;
     column-gap: 20px;
     justify-content: flex-end;
+    height: 36px;
 }
 
 
