@@ -519,7 +519,9 @@ ul {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+    }
+    .main-header-wrap a{
+        height: 40px;
     }
 
     .nav-btn {
@@ -547,7 +549,7 @@ ul {
     .main-nav {
         display: flex;
         flex-direction: column;
-
+        height: 100%;
     }
 
     .main-nav a {
