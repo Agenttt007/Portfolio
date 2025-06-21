@@ -502,7 +502,7 @@ ul {
 
     .contacts li {
         font-size: 14px;
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
 
     .section-intro p {
