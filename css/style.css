@@ -397,6 +397,19 @@ ul {
         font-size: 16px;
     }
 
+    .highlight{
+        height: 32px;
+        width: 368px;
+    }
+    .section-skills-haader{
+        margin-bottom: 3px;
+    }
+
+    .section-skills-button-sort{
+        height: 32px;
+        
+    }
+
     .contacts li {
         font-size: 16px;
     }
