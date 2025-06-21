@@ -606,10 +606,15 @@ ul {
     .section-skills-haader {
         height: 30px;
         margin-bottom: 32px;
+        align-items: center;
     }
 
     .skill-level {
         margin-bottom: 22px;
+    }
+
+    .skills-button-sort{
+        padding: 6px 10px;
     }
 
     .section-skills {
