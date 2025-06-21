@@ -529,10 +529,12 @@ ul {
 
     .nav-btn_close {
         background-image: url(../img/close.svg);
+        border: none;
     }
 
     .nav-btn_open {
         background-image: url(../img/burger.svg);
+        border: none;
     }
 
     .main-header {
