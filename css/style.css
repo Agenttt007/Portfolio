@@ -2,8 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-} 
-
+}
 
 :root {
     --txt-color: #212121;
