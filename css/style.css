@@ -76,6 +76,7 @@ img {
 .main-nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .main-nav a {
@@ -478,6 +479,7 @@ ul {
 
     .contacts li {
         font-size: 14px;
+        margin-bottom: 20px;
     }
 
     .section-intro p {
@@ -584,13 +586,13 @@ ul {
         margin-bottom: 50px;
     }
 
+    .social{
+        column-gap: 15px;
+    }
+
     .margin-bottom_part3,
     .margin-bottom_part4 {
         margin-bottom: 50px;
-    }
-
-    .social-link {
-        margin-top: 20px;
     }
 
     .contact-link {
