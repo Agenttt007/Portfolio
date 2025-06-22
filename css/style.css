@@ -767,6 +767,7 @@ ul {
         column-gap: 0;
         display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
     }
 
     .contact-link_my_email {
