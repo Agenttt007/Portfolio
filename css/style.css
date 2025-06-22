@@ -722,19 +722,24 @@ ul {
         align-items: start;
     }
 
+    .highlight h2{
+        margin-bottom: ;
+    }
+
     .section-skills-haader{
         height: 100%;
+        align-items: start;
     }
 
     .section-skills-haader h2{
-        margin-bottom: 36px;
+        margin-bottom: 40px;
     }
 
     .section-skills-button-sort {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 320px;
         justify-content: normal;
     }
 
