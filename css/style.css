@@ -75,6 +75,8 @@ img {
     margin-bottom: 120px;
 }
 
+
+
 .main-header {
     display: flex;
     flex-direction: row;
@@ -364,6 +366,10 @@ ul {
     background-image: url("../img/python.svg");
 }
 
+.margin-bottom_part4{
+    margin-bottom: 100px;
+}
+
 .container-footer {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -442,7 +448,7 @@ ul {
     }
 
     .margin-bottom {
-        margin-bottom: 80px;
+        margin-bottom: 64px;
     }
 
     .skill-level {
@@ -634,7 +640,7 @@ ul {
     }
 
     .margin-bottom_part4 {
-        margin-bottom: 45px;
+        margin-bottom: 35px;
     }
 
     .contacts {
