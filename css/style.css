@@ -723,6 +723,10 @@ ul {
         flex-direction: column;
     }
 
+    .section-skills-haader{
+        height: 145px;
+    }
+
     .section-skills-button-sort {
         display: flex;
         flex-direction: column;
