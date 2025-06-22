@@ -721,10 +721,15 @@ ul {
     .highlight {
         display: flex;
         flex-direction: column;
+        align-items: start;
     }
 
     .section-skills-haader{
-        height: 145px;
+        height: 100%;
+    }
+
+    .section-skills-haader h2{
+        margin-bottom: 36px;
     }
 
     .section-skills-button-sort {
@@ -732,7 +737,7 @@ ul {
         flex-direction: column;
         align-items: center;
         width: 100%;
-
+        justify-content: normal;
     }
 
     .section-intro div {
