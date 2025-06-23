@@ -86,7 +86,6 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 61px;
 }
 
 .main-nav a {
@@ -157,7 +156,6 @@ ul {
     line-height: 100%;
     letter-spacing: 0%;
     display: inline-block;
-    height: 30px;
     margin: 0;
     /*margin-right: 35px;*/
     background-repeat: no-repeat;
@@ -244,7 +242,6 @@ ul {
     display: flex;
     align-items: start;
     justify-content: flex-end;
-    height: 36px;
     column-gap: 20px;
     align-items: center;
 }
@@ -258,7 +255,6 @@ ul {
     display: flex;
     column-gap: 20px;
     justify-content: flex-end;
-    height: 36px;
 }
 
 
@@ -396,26 +392,12 @@ ul {
         font-size: 16px;
     }
 
-    .main-header-wrap {
-        height: 60px;
-    }
-
     .main-nav a {
         font-size: 16px;
     }
 
-    .highlight {
-        height: 32px;
-        width: 368px;
-    }
-
     .section-skills-haader {
         margin-bottom: 3px;
-    }
-
-    .section-skills-button-sort {
-        height: 32px;
-
     }
 
     .contacts {
@@ -522,15 +504,10 @@ ul {
     }
 
     .main-header-wrap {
-        height: 40px;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-
-    .main-header-wrap a {
-        height: 40px;
     }
 
     .nav-btn {
@@ -558,7 +535,6 @@ ul {
     .main-nav {
         display: flex;
         flex-direction: column;
-        height: 100%;
     }
 
     .main-nav a {
@@ -612,7 +588,6 @@ ul {
     }
 
     .section-skills-haader {
-        height: 30px;
         margin-bottom: 32px;
         align-items: center;
     }
@@ -735,7 +710,6 @@ ul {
     }
 
     .section-skills-haader {
-        height: 100%;
         align-items: start;
     }
 
