@@ -146,7 +146,6 @@ button:hover {
     margin: 0;
     column-gap: 40px;
     margin-bottom: 45px;
-    margin-top: 44px;
 }
 
 ul {
@@ -183,7 +182,7 @@ ul {
     border-radius: 50%;
     background-repeat: repeat;
     background-position: 50% 50%;
-
+    height: 50px;
 }
 
 .visually-hidden {
@@ -382,7 +381,7 @@ ul {
 
     h2 {
         font-size: 24px;
-
+        ma
     }
 
     h3 {
@@ -402,7 +401,6 @@ ul {
     }
 
     .contacts {
-        margin-top: 0;
         margin-bottom: 40px;
     }
 
@@ -420,6 +418,15 @@ ul {
 
     .section-intro {
         margin-bottom: 80px;
+    }
+
+    .section-skills-haader {
+        margin-bottom: 35px;
+    }
+
+    .section-skills-haader h2 {
+        margin-bottom: 0;
+        align-items: center;
     }
 
     .main-nav {
@@ -448,10 +455,6 @@ ul {
         display: flex;
         padding-top: 8px;
         padding-bottom: 8px;
-    }
-
-    .margin-bottom_part4 {
-        margin-bottom: 74px;
     }
 
     /*.section-intro {
