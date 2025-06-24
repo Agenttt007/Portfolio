@@ -76,6 +76,7 @@ img {
 .main-header {
     display: flex;
     flex-direction: row;
+    height: 60px;
     padding-top: 60px;
     gap: 40px;
     /*margin-bottom: 113px;*/
@@ -377,6 +378,7 @@ ul {
 
     h2 {
         font-size: 24px;
+
     }
 
     h3 {
