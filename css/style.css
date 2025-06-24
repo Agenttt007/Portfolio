@@ -729,6 +729,7 @@ ul {
         display: flex;
         flex-direction: column;
         align-items: start;
+        width: 100%;
     }
 
     .highlight h2 {
@@ -737,10 +738,11 @@ ul {
 
     .section-skills-haader {
         align-items: start;
+        margin-bottom: 30px;
     }
 
     .section-skills-haader h2 {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .section-skills-button-sort {
@@ -760,10 +762,6 @@ ul {
         margin-top: 10px;
     }
 
-    .skill-list {
-        margin-top: 80px;
-    }
-
     .contact-link {
         padding-top: 8px;
         padding-bottom: 8px;
@@ -775,7 +773,7 @@ ul {
         column-gap: 0;
         display: flex;
         flex-direction: column;
-        margin-bottom: 35px;
+        margin-bottom: 20px;
     }
 
     .contact-link_my_email {
@@ -787,7 +785,7 @@ ul {
     }
 
     .social li {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     .margin-bottom_part4 {
