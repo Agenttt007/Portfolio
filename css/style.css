@@ -521,6 +521,10 @@ ul {
         justify-content: space-between;
     }
 
+    .main-header-wrap a {
+        height: 40px;
+    }
+
     .nav-btn {
         display: block;
         width: 30px;
