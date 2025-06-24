@@ -120,7 +120,7 @@ button {
     color: inherit;
     background-color: transparent;
     cursor: pointer;
-    padding: 3px 9px;
+    padding: 6px 10px 10px;
     color: var(--second-color);
     background-color: var(--bg-color);
     text-transform: lowercase;
@@ -243,7 +243,6 @@ ul {
     align-items: start;
     justify-content: flex-end;
     column-gap: 20px;
-    align-items: center;
 }
 
 .skills-button-sort {
@@ -394,10 +393,6 @@ ul {
 
     .main-nav a {
         font-size: 16px;
-    }
-
-    .section-skills-haader {
-        margin-bottom: 3px;
     }
 
     .contacts {
