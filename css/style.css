@@ -87,6 +87,10 @@ img {
     height: 60px;
 }
 
+.margin-bottom_part4 h2 {
+    margin-bottom: 45px;
+}
+
 .main-nav {
     display: flex;
     flex-direction: row;
