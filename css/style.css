@@ -457,7 +457,7 @@ ul {
     }
 
     .margin-bottom_part4 h2 {
-        margin-bottom: 45px;
+        margin-bottom: 40px;
     }
 
     /*.section-intro {
@@ -673,6 +673,7 @@ ul {
     .highlight {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .section-skills-button-sort {
