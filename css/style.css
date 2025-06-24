@@ -456,6 +456,10 @@ ul {
         padding-bottom: 8px;
     }
 
+    .margin-bottom_part4 h2 {
+        margin-bottom: 45px;
+    }
+
     /*.section-intro {
         display: flex;
         flex-direction: column-reverse;
