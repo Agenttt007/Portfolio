@@ -5,12 +5,13 @@
 
 let user = {
     name: "John",
-    age: 30,
-    sayHi: () => {
-        console.log("Hello");
-    }
+    age: 30
 };
 
-user.sayHi();
+function sayHi(){
+    console.log("Hello");
+}
 
+user.sayHi = sayHi;
+user.sayHi();
 console.log(user);
