@@ -8,4 +8,9 @@ let user = {
     age: 30
 };
 
+<script>
+    console.log(1);
+
+</script>
+
 console.log(user);
