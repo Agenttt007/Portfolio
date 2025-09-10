@@ -5,13 +5,12 @@
 
 let user = {
     name: "John",
-    age: 30
+    age: 30,
+    sayHi: function () {
+        console.log ('Меня зовут ${this.name}' ) ;
+    }
 };
 
-function sayHi(){
-    console.log("Hello");
-}
-
-user.sayHi = sayHi;
 user.sayHi();
+
 console.log(user);
