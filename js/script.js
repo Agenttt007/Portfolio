@@ -7,7 +7,7 @@ let user = {
     name: "John",
     age: 30,
     sayHi: function () {
-        console.log('Меня зовуттт');
+        console.log(`Меня зовут ${this.name}`);
     }
 };
 
