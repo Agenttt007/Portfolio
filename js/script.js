@@ -13,7 +13,16 @@ data.forEach(item => {
     const dt = document.createElement('dt');
     const dd = document.createElement('dd');
     const div = document.createElement('div');
+
+    div.classList.add(item.cssclass);
+
+    dt.textContent = item.namenav;
+    div.textContent = `${item.lvlskill}%`;
+
+
 })
+
+
 
 
 console.log(skillList);
