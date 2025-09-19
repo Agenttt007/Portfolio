@@ -5,17 +5,17 @@ const skillList = document.querySelectorAll('dl.skill-list');
 
 console.log(skillList);
 
-/*const data = [
-    {html},
-    {css},
-    {python},
-    {c++}
+const data = [
+    {namenav : 'html', lvlskill : 45, cssclass : 'skill-level'},
+    {namenav : 'css', lvlskill : 25, cssclass : 'skill-level'},
+    {namenav : 'python', lvlskill : 70, cssclass : 'skill-level'},
+    {namenav : 'c++', lvlskill : 55, cssclass : 'skill-level'}
 ]
 
 
 
 
-const phoneinput = document.querySelector('input[type=phone]');
+/*const phoneinput = document.querySelector('input[type=phone]');
 const  box = document.querySelector('#box');
         circles = document.querySelectorAll('.circle');
         div = document.createElement('div');*/
