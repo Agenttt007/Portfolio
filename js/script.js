@@ -1,8 +1,8 @@
 'use strict';
 
 const data = [
-    {namenav : 'html', lvlskill : 45, cssclass : 'skill-level'},
-    {namenav : 'css', lvlskill : 25, cssclass : 'skill-level'},
+    {namenav : 'html', lvlskill : 45, cssclass : "skill-level"},
+    {namenav : 'css', lvlskill : 25, cssclass : "skill-level"},
     {namenav : 'python', lvlskill : 70, cssclass : 'skill-level'},
     {namenav : 'c++', lvlskill : 55, cssclass : 'skill-level'}
 ]
@@ -20,8 +20,11 @@ data.forEach(item => {
 
     div.style.width = `${item.lvlskill}%`;
 
+    dd.append(div);
 
-})
+    skillList.append(dt);
+    skillList.append(dd);
+});
 
 
 
