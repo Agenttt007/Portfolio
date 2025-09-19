@@ -1,10 +1,5 @@
 'use strict';
 
-const skillList = document.querySelectorAll('dl.skill-list');
-
-
-console.log(skillList);
-
 const data = [
     {namenav : 'html', lvlskill : 45, cssclass : 'skill-level'},
     {namenav : 'css', lvlskill : 25, cssclass : 'skill-level'},
@@ -12,7 +7,16 @@ const data = [
     {namenav : 'c++', lvlskill : 55, cssclass : 'skill-level'}
 ]
 
+const skillList = document.querySelector('dl.skill-list');
 
+data.forEach(item => {
+    const dt = document.createElement('dt');
+    const dd = document.createElement('dd');
+    const div = document.createElement('div');
+})
+
+
+console.log(skillList);
 
 
 /*const phoneinput = document.querySelector('input[type=phone]');
