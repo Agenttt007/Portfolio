@@ -1,7 +1,22 @@
 'use strict';
 
-//const phoneinput = document.querySelector('input[type=phone]');
-/*const  box = document.querySelector('#box');
+const skillList = document.querySelectorAll('dl.skill-list');
+
+
+console.log(skillList);
+
+/*const data = [
+    {html},
+    {css},
+    {python},
+    {c++}
+]
+
+
+
+
+const phoneinput = document.querySelector('input[type=phone]');
+const  box = document.querySelector('#box');
         circles = document.querySelectorAll('.circle');
         div = document.createElement('div');*/
 
@@ -14,7 +29,7 @@
     item.classList.toogle('after');
 });
 
-console.log(circles);*/
+console.log(circles);
 
 const style = document.createElement('link');
 
@@ -25,5 +40,6 @@ console.log(style);
 
 document.head.append(style);
 
-style.remove();
+style.remove();*/
+
 
