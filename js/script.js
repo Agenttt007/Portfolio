@@ -17,7 +17,8 @@ data.forEach(item => {
     div.classList.add(item.cssclass);
 
     dt.textContent = item.namenav;
-    div.textContent = `${item.lvlskill}%`;
+
+    div.style.width = `${item.lvlskill}%`;
 
 
 })
