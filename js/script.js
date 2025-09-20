@@ -6,32 +6,34 @@ const skills = {
         {namenav : 'css', lvlskill : 25, cssclass : 'skill-level', iconskill : 'css.svg'},
         {namenav : 'c++', lvlskill : 55, cssclass : 'skill-level', iconskill : 'c++.svg'},
         {namenav : 'python', lvlskill : 70, cssclass : 'skill-level', iconskill : 'python.svg'}
-    ]
+    ],
+
+    generateList() {
+
+        const skillList = document.querySelector('dl.skill-list');
+
+        this.data.forEach(item => {
+            const dt = document.createElement('dt');
+            const dd = document.createElement('dd');
+            const div = document.createElement('div');
+
+            dt.style.backgroundImage = `url("../img/${item.iconskill}")`;
+
+            div.classList.add(item.cssclass);
+
+            dt.textContent = item.namenav;
+
+            div.style.width = `${item.lvlskill}%`;
+
+            dd.append(div);
+
+            skillList.append(dt);
+            skillList.append(dd);
+        });
+    }
 };
 
-const skillList = document.querySelector('dl.skill-list');
-
-skills.data.forEach(item => {
-    const dt = document.createElement('dt');
-    const dd = document.createElement('dd');
-    const div = document.createElement('div');
-
-    dt.style.backgroundImage = `url("../img/${item.iconskill}")`;
-
-    div.classList.add(item.cssclass);
-
-    dt.textContent = item.namenav;
-
-    div.style.width = `${item.lvlskill}%`;
-
-    dd.append(div);
-
-    skillList.append(dt);
-    skillList.append(dd);
-});
-
-
-console.log(skillList);
+skills.generateList();
 
 
 /*const phoneinput = document.querySelector('input[type=phone]');
