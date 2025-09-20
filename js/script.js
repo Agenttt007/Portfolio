@@ -8,9 +8,7 @@ const skills = {
         {namenav : 'python', lvlskill : 70, cssclass : 'skill-level', iconskill : 'python.svg'}
     ],
 
-    generateList() {
-
-        const skillList = document.querySelector('dl.skill-list');
+    generateList(parentElement) {
 
         this.data.forEach(item => {
             const dt = document.createElement('dt');
@@ -27,13 +25,15 @@ const skills = {
 
             dd.append(div);
 
-            skillList.append(dt);
-            skillList.append(dd);
+            parentElement.append(dt);
+            parentElement.append(dd);
         });
     }
 };
 
-skills.generateList();
+const skillList = document.querySelector('dl.skill-list');
+
+skills.generateList(skillList);
 
 
 /*const phoneinput = document.querySelector('input[type=phone]');
