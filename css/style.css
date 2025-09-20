@@ -345,7 +345,7 @@ ul {
 
 
 
-.skill-item {
+/*.skill-item {
     text-transform: lowercase;
 }
 
@@ -363,7 +363,7 @@ ul {
 
 .skill-item_python {
     background-image: url("../img/python.svg");
-}
+}*/
 
 .container-footer {
     padding-top: 50px;
