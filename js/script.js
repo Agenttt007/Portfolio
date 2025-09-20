@@ -1,10 +1,10 @@
 'use strict';
 
 const data = [
-    {namenav : 'html', lvlskill : 45, cssclass : "skill-level"},
-    {namenav : 'css', lvlskill : 25, cssclass : "skill-level"},
-    {namenav : 'python', lvlskill : 70, cssclass : 'skill-level'},
-    {namenav : 'c++', lvlskill : 55, cssclass : 'skill-level'}
+    {namenav : 'html', lvlskill : 45, cssclass : 'skill-level', iconskill : 'html.svg'},
+    {namenav : 'css', lvlskill : 25, cssclass : 'skill-level', iconskill : 'css.svg'},
+    {namenav : 'python', lvlskill : 70, cssclass : 'skill-level', iconskill : 'c++.svg'},
+    {namenav : 'c++', lvlskill : 55, cssclass : 'skill-level', iconskill : 'python.svg'}
 ]
 
 const skillList = document.querySelector('dl.skill-list');
