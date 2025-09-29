@@ -2,10 +2,10 @@
 
 const skills = {
     data: [
-        {namenav : 'html', lvlskill : 45, cssclass : 'skill-level', iconskill : 'html.svg'},
-        {namenav : 'css', lvlskill : 25, cssclass : 'skill-level', iconskill : 'css.svg'},
-        {namenav : 'c++', lvlskill : 55, cssclass : 'skill-level', iconskill : 'c++.svg'},
-        {namenav : 'python', lvlskill : 70, cssclass : 'skill-level', iconskill : 'python.svg'}
+        { namenav: 'html', lvlskill: 45, cssclass: 'skill-level', iconskill: 'html.svg' },
+        { namenav: 'css', lvlskill: 25, cssclass: 'skill-level', iconskill: 'css.svg' },
+        { namenav: 'c++', lvlskill: 55, cssclass: 'skill-level', iconskill: 'c++.svg' },
+        { namenav: 'python', lvlskill: 70, cssclass: 'skill-level', iconskill: 'python.svg' }
     ],
 
     generateList(parentElement) {
