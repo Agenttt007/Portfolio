@@ -15,7 +15,7 @@ const skills = {
             const dd = document.createElement('dd');
             const div = document.createElement('div');
 
-            dt.style.backgroundImage = `url("../img/${item.iconskill}")`;
+            dt.style.backgroundImage = `url("/img/${item.iconskill}")`;
 
             dd.classList.add(item.cssclass);
 
