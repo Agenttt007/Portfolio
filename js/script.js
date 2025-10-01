@@ -17,7 +17,7 @@ const skills = {
 
             dt.style.backgroundImage = `url("../img/${item.iconskill}")`;
 
-            div.classList.add(item.cssclass);
+            dd.classList.add(item.cssclass);
 
             dt.textContent = item.namenav;
 
