@@ -27,8 +27,7 @@ const skills = {
 
 
 
-            parentElement.append(dt);
-            parentElement.append(dd);
+            parentElement.append(dt, dd);
         });
     }
 };
