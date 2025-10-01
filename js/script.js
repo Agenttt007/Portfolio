@@ -25,6 +25,8 @@ const skills = {
 
             dd.append(div);
 
+
+
             parentElement.append(dt);
             parentElement.append(dd);
         });
