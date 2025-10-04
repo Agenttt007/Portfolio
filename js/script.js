@@ -2,10 +2,10 @@
 
 const skills = {
     data: [
-        { namenav: 'html', lvlskill: 45, cssclass: 'skill-level', iconskill: 'html.svg' },
-        { namenav: 'css', lvlskill: 25, cssclass: 'skill-level', iconskill: 'css.svg' },
-        { namenav: 'c++', lvlskill: 55, cssclass: 'skill-level', iconskill: 'c++.svg' },
-        { namenav: 'python', lvlskill: 70, cssclass: 'skill-level', iconskill: 'python.svg' }
+        { namenav: 'html', lvlskill: 45, iconskill: 'html.svg' },
+        { namenav: 'css', lvlskill: 25, iconskill: 'css.svg' },
+        { namenav: 'c++', lvlskill: 55, iconskill: 'c++.svg' },
+        { namenav: 'python', lvlskill: 70, iconskill: 'python.svg' }
     ],
 
     generateList(parentElement) {
@@ -17,15 +17,13 @@ const skills = {
 
             dt.style.backgroundImage = `url("img/${item.iconskill}")`;
 
-            dd.classList.add(item.cssclass);
+            dd.classList.add('skill-level');
 
             dt.textContent = item.namenav;
 
             div.style.width = `${item.lvlskill}%`;
 
             dd.append(div);
-
-
 
             parentElement.append(dt, dd);
         });
