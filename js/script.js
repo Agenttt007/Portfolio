@@ -36,3 +36,25 @@ skills.generateList(skillList);
 
 const skillsSortBlock = document.querySelector('.section-skills-button-sort');
 
+console.log(skillsSortBlock);
+
+skillsSortBlock.addEventListener('click', (e) => {
+    if (e.target.nodeName === 'BUTTON') {
+        console.log('Клик по кнопке:', e.target);
+        console.log('Текст кнопки:', e.target.textContent);
+
+        // Добавляем проверку data-атрибутов
+        switch (e.target.dataset.type) {
+            case 'name':
+                console.log('сортировка по имени');
+                break;
+
+            case 'level':
+                console.log('сортировка по уровню');
+                break;
+
+            default:
+                console.log('неизвестная кнопка');
+        }
+    }
+});
