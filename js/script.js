@@ -38,25 +38,26 @@ const skillsSortBlock = document.querySelector('.section-skills-button-sort');
 
 console.log(skillsSortBlock);
 
-function compareSortByName(a, b) {
-    if (a.namenav < b.namenav) {
-        return -1;
-    }
-    if (a.namenav > b.namenav) {
-        return 1;
-    }
-    return 0;
+function getComparer(prop) {
+    return function (a, b) {
+        if (a[prop] < b[prop]) {
+            return -1;
+        }
+        if (a[prop] > b[prop]) {
+            return 1;
+        }
+        return 0;
+    };
 }
 
 function sortByName() {
-    skills.data.sort(compareSortByName);
+    skills.data.sort(getComparer('namenav'));
     skills.generateList(skillList);
 }
 
-function compareSortByLevel(a, b) {
-}
-
 function sortByLevel() {
+    skills.data.sort(getComparer('namenav'));
+    skills.generateList(skillList);
 }
 
 skillsSortBlock.addEventListener('click', (e) => {
