@@ -7,6 +7,7 @@ const skills = {
         { namenav: 'c++', lvlskill: 55, iconskill: 'c++.svg' },
         { namenav: 'python', lvlskill: 70, iconskill: 'python.svg' }
     ],
+
     sortMode: null,
 
     generateList(parentElement) {
@@ -30,6 +31,28 @@ const skills = {
 
             parentElement.append(dt, dd);
         });
+    },
+
+    sortList(sortType) {
+
+        if (this.sortMode === sortType) {
+            this.data.reverse();
+            console.log('инвертировали порядок сортировки');
+
+        } else {
+            if (sortType === 'name') {
+                this.data.sort(getComparer('namenav'));
+                console.log('отсортировали по имени');
+
+            } else if (sortType === 'level') {
+                this.data.sort(getComparer('lvlskill'));
+                console.log('отсортировали по уровню');
+            }
+
+            this.sortMode = sortType;
+        }
+
+        this.generateList(skillList);
     }
 };
 
@@ -51,22 +74,7 @@ function getComparer(prop) {
     };
 }
 
-function sortList(sortType) {
-    if (skills.sortMode === sortType) {
-        skills.data.reverse();
-        console.log('инвертировали порядок сортировки');
-    } else {
-        if (sortType === 'name') {
-            skills.data.sort(getComparer('namenav'));
-            console.log('отсортировали по имени');
-        } else if (sortType === 'level') {
-            skills.data.sort(getComparer('lvlskill'));
-            console.log('отсортировали по уровню');
-        }
-        skills.sortMode = sortType;
-    }
-    skills.generateList(skillList);
-}
+
 
 skillsSortBlock.addEventListener('click', (e) => {
     if (e.target.nodeName === 'BUTTON') {
@@ -75,11 +83,11 @@ skillsSortBlock.addEventListener('click', (e) => {
 
         switch (e.target.dataset.type) {
             case 'name':
-                sortList('name');
+                skills.sortList('name');
                 break;
 
             case 'level':
-                sortList('level');
+                skills.sortList('level');
                 break;
 
             default:
