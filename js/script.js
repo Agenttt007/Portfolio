@@ -104,26 +104,32 @@ const btnviewmenu = document.querySelector('.nav-btn');
 
 console.log(btnviewmenu);
 
-btnviewmenu.addEventListener('click', function () {
-    console.log('Кнопка:', btnviewmenu);
-    console.log('Меню:', viewmenu);
+const menu = {
+    viewmenu: document.querySelector('.main-nav'),
+    btnviewmenu: document.querySelector('.nav-btn'),
+
+    close() {
+        this.viewmenu.classList.add('main-nav_closed');
+        this.btnviewmenu.classList.remove('nav-btn_close');
+        this.btnviewmenu.classList.add('nav-btn_open');
+        this.btnviewmenu.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
+    },
+
+    open() {
+        this.viewmenu.classList.remove('main-nav_closed');
+        this.btnviewmenu.classList.remove('nav-btn_open');
+        this.btnviewmenu.classList.add('nav-btn_close');
+        this.btnviewmenu.innerHTML = '<span class="visually-hidden">Закрыть меню</span>';
+    }
+};
+
+menu.close();
+
+menu.btnviewmenu.addEventListener('click', (e) => {
+    if (e.target.classList.contains('nav-btn_open')) {
+        menu.open();
+    } else {
+        menu.close();
+    }
 });
-
-function closeMenu() {
-    viewmenu.classList.add('main-nav_closed');
-    btnviewmenu.classList.remove('nav-btn_close');
-    btnviewmenu.classList.add('nav-btn_open');
-    btnviewmenu.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
-};
-
-closeMenu();
-
-function openMenu() {
-    viewmenu.classList.add('main-nav_closed');
-    btnviewmenu.classList.remove('nav-btn_close');
-    btnviewmenu.classList.add('nav-btn_open');
-    btnviewmenu.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
-};
-
-openMenu();
 
