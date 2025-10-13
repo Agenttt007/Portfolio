@@ -96,3 +96,15 @@ skillsSortBlock.addEventListener('click', (e) => {
     }
 });
 
+const viewmenu = document.querySelector('.main-nav');
+
+console.log(viewmenu);
+
+const btnviewmenu = document.querySelector('.nav-btn');
+
+console.log(btnviewmenu);
+
+btnviewmenu.addEventListener('click', function () {
+    console.log('Кнопка:', btnviewmenu);
+    console.log('Меню:', viewmenu);
+});
