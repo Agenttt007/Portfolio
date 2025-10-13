@@ -38,23 +38,44 @@ const skillsSortBlock = document.querySelector('.section-skills-button-sort');
 
 console.log(skillsSortBlock);
 
+function compareSortByName(a, b) {
+    if (a.namenav < b.namenav) {
+        return -1;
+    }
+    if (a.namenav > b.namenav) {
+        return 1;
+    }
+    return 0;
+}
+
+function sortByName() {
+    skills.data.sort(compareSortByName);
+    skills.generateList(skillList);
+}
+
+function compareSortByLevel(a, b) {
+}
+
+function sortByLevel() {
+}
+
 skillsSortBlock.addEventListener('click', (e) => {
     if (e.target.nodeName === 'BUTTON') {
         console.log('Клик по кнопке:', e.target);
         console.log('Текст кнопки:', e.target.textContent);
 
-        // Добавляем проверку data-атрибутов
         switch (e.target.dataset.type) {
             case 'name':
-                console.log('сортировка по имени');
+                sortByName();
                 break;
 
             case 'level':
-                console.log('сортировка по уровню');
+                sortByLevel();
                 break;
 
             default:
-                console.log('неизвестная кнопка');
+
         }
     }
 });
+
