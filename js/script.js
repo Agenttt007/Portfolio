@@ -56,7 +56,7 @@ function sortByName() {
 }
 
 function sortByLevel() {
-    skills.data.sort(getComparer('namenav'));
+    skills.data.sort(getComparer('lvlskill'));
     skills.generateList(skillList);
 }
 
