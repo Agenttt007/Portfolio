@@ -51,18 +51,20 @@ function getComparer(prop) {
     };
 }
 
-function sortByName() {
-    if (skills.sortMode === 'name') {
+function sortList(sortType) {
+    if (skills.sortMode === sortType) {
         skills.data.reverse();
+        console.log('инвертировали порядок сортировки');
     } else {
-        skills.data.sort(getComparer('namenav'));
-        skills.sortMode = 'name';
+        if (sortType === 'name') {
+            skills.data.sort(getComparer('namenav'));
+            console.log('отсортировали по имени');
+        } else if (sortType === 'level') {
+            skills.data.sort(getComparer('lvlskill'));
+            console.log('отсортировали по уровню');
+        }
+        skills.sortMode = sortType;
     }
-    skills.generateList(skillList);
-}
-
-function sortByLevel() {
-    skills.data.sort(getComparer('lvlskill'));
     skills.generateList(skillList);
 }
 
@@ -73,11 +75,11 @@ skillsSortBlock.addEventListener('click', (e) => {
 
         switch (e.target.dataset.type) {
             case 'name':
-                sortByName();
+                sortList('name');
                 break;
 
             case 'level':
-                sortByLevel();
+                sortList('level');
                 break;
 
             default:
