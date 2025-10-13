@@ -79,7 +79,6 @@ img {
 
     padding-top: 60px;
     gap: 40px;
-    /*margin-bottom: 113px;*/
     align-items: center;
 }
 
@@ -165,7 +164,6 @@ ul {
     letter-spacing: 0%;
     display: inline-block;
     margin: 0;
-    /*margin-right: 35px;*/
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -242,7 +240,6 @@ ul {
 
 .section-skills-haader {
     display: flex;
-    /*margin-bottom: 40px;*/
     justify-content: space-between;
 }
 
@@ -343,28 +340,6 @@ ul {
     letter-spacing: 0%;
 }
 
-
-
-/*.skill-item {
-    text-transform: lowercase;
-}
-
-.skill-item_html {
-    background-image: url("../img/html.svg");
-}
-
-.skill-item_css {
-    background-image: url("../img/css.svg");
-}
-
-.skill-item_cpp {
-    background-image: url("../img/c++.svg");
-}
-
-.skill-item_python {
-    background-image: url("../img/python.svg");
-}*/
-
 .container-footer {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -459,15 +434,6 @@ ul {
     .margin-bottom_part4 h2 {
         margin-bottom: 40px;
     }
-
-    /*.section-intro {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 30px;
-        text-align: center;
-    }*/
-
-    /* переопределение свойств */
 }
 
 @media screen and (max-width: 650px) {
@@ -644,13 +610,11 @@ ul {
 
     .container-footer {
         display: flex;
-        /*padding: 30px 430px 30px 20px;*/
         padding-top: 30px;
         padding-left: 20px;
         padding-bottom: 30px;
     }
 
-    /* переопределение свойств */
 }
 
 @media screen and (max-width: 555px) {
@@ -719,8 +683,6 @@ ul {
         padding-bottom: 8px;
         display: flex;
         padding-left: 42px;
-        /*align-items: center;*/
-        /*justify-content: center;*/
     }
 
     .contacts {
@@ -737,7 +699,6 @@ ul {
         margin-top: 20px;
     }
 
-    /* переопределение свойств */
 }
 
 @media screen and (max-width: 360px) {
@@ -805,7 +766,6 @@ ul {
         margin-bottom: 35px;
     }
 
-    /* переопределение свойств */
 }
 
 footer {

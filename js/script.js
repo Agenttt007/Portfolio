@@ -7,8 +7,11 @@ const skills = {
         { namenav: 'c++', lvlskill: 55, iconskill: 'c++.svg' },
         { namenav: 'python', lvlskill: 70, iconskill: 'python.svg' }
     ],
+    sortMode: null,
 
     generateList(parentElement) {
+
+        parentElement.innerHTML = '';
 
         this.data.forEach(item => {
             const dt = document.createElement('dt');
@@ -36,8 +39,6 @@ skills.generateList(skillList);
 
 const skillsSortBlock = document.querySelector('.section-skills-button-sort');
 
-console.log(skillsSortBlock);
-
 function getComparer(prop) {
     return function (a, b) {
         if (a[prop] < b[prop]) {
@@ -51,7 +52,12 @@ function getComparer(prop) {
 }
 
 function sortByName() {
-    skills.data.sort(getComparer('namenav'));
+    if (skills.sortMode === 'name') {
+        skills.data.reverse();
+    } else {
+        skills.data.sort(getComparer('namenav'));
+        skills.sortMode = 'name';
+    }
     skills.generateList(skillList);
 }
 
