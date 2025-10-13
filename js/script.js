@@ -108,3 +108,22 @@ btnviewmenu.addEventListener('click', function () {
     console.log('Кнопка:', btnviewmenu);
     console.log('Меню:', viewmenu);
 });
+
+function closeMenu() {
+    viewmenu.classList.add('main-nav_closed');
+    btnviewmenu.classList.remove('nav-btn_close');
+    btnviewmenu.classList.add('nav-btn_open');
+    btnviewmenu.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
+};
+
+closeMenu();
+
+function openMenu() {
+    viewmenu.classList.add('main-nav_closed');
+    btnviewmenu.classList.remove('nav-btn_close');
+    btnviewmenu.classList.add('nav-btn_open');
+    btnviewmenu.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
+};
+
+openMenu();
+
