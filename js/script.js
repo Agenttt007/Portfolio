@@ -123,8 +123,6 @@ const menu = {
     }
 };
 
-menu.close();
-
 menu.btnviewmenu.addEventListener('click', (e) => {
     if (e.target.classList.contains('nav-btn_open')) {
         menu.open();
@@ -132,4 +130,6 @@ menu.btnviewmenu.addEventListener('click', (e) => {
         menu.close();
     }
 });
+
+menu.close();
 

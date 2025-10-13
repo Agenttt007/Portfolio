@@ -615,6 +615,10 @@ ul {
         padding-bottom: 30px;
     }
 
+    .main-nav_closed {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 555px) {
