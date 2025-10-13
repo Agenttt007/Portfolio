@@ -35,3 +35,6 @@ const skills = {
 const skillList = document.querySelector('dl.skill-list');
 
 skills.generateList(skillList);
+
+const skillsSortBlock = document.querySelector('.section-skills-button-sort');
+
