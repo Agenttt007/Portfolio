@@ -616,8 +616,8 @@ ul {
     }
 
     button:hover {
-    background-color: var(--bg-color);
-}
+        background-color: var(--bg-color);
+    }
 
     .main-nav_closed {
         display: none;
