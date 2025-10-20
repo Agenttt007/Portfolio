@@ -94,6 +94,7 @@ skillsSortBlock.addEventListener('click', (e) => {
 
         }
     }
+    console.clear()
 });
 
 const menu = {
@@ -105,6 +106,7 @@ const menu = {
         this.btnviewMenu.classList.remove('nav-btn_close');
         this.btnviewMenu.classList.add('nav-btn_open');
         this.btnviewMenu.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
+        console.clear()
     },
 
     open() {
@@ -112,6 +114,7 @@ const menu = {
         this.btnviewMenu.classList.remove('nav-btn_open');
         this.btnviewMenu.classList.add('nav-btn_close');
         this.btnviewMenu.innerHTML = '<span class="visually-hidden">Закрыть меню</span>';
+        console.clear()
     }
 };
 
