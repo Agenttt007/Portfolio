@@ -2,10 +2,10 @@
 
 const skills = {
     data: [
-        { namenav: 'html', lvlskill: 45, iconskill: 'html.svg' },
-        { namenav: 'css', lvlskill: 25, iconskill: 'css.svg' },
-        { namenav: 'c++', lvlskill: 55, iconskill: 'c++.svg' },
-        { namenav: 'python', lvlskill: 70, iconskill: 'python.svg' }
+        { nameNav: 'html', lvlSkill: 45, iconSkill: 'html.svg' },
+        { nameNav: 'css', lvlSkill: 25, iconSkill: 'css.svg' },
+        { nameNav: 'c++', lvlSkill: 55, iconSkill: 'c++.svg' },
+        { nameNav: 'python', lvlSkill: 70, iconSkill: 'python.svg' }
     ],
 
     sortMode: null,
@@ -19,13 +19,13 @@ const skills = {
             const dd = document.createElement('dd');
             const div = document.createElement('div');
 
-            dt.style.backgroundImage = `url("img/${item.iconskill}")`;
+            dt.style.backgroundImage = `url("img/${item.iconSkill}")`;
 
             dd.classList.add('skill-level');
 
-            dt.textContent = item.namenav;
+            dt.textContent = item.nameNav;
 
-            div.style.width = `${item.lvlskill}%`;
+            div.style.width = `${item.lvlSkill}%`;
 
             dd.append(div);
 
@@ -41,11 +41,11 @@ const skills = {
 
         } else {
             if (sortType === 'name') {
-                this.data.sort(getComparer('namenav'));
+                this.data.sort(getComparer('nameNav'));
                 console.log('отсортировали по имени');
 
             } else if (sortType === 'level') {
-                this.data.sort(getComparer('lvlskill'));
+                this.data.sort(getComparer('lvlSkill'));
                 console.log('отсортировали по уровню');
             }
 
@@ -96,34 +96,34 @@ skillsSortBlock.addEventListener('click', (e) => {
     }
 });
 
-const viewmenu = document.querySelector('.main-nav');
+const viewMenu = document.querySelector('.main-nav');
 
-console.log(viewmenu);
+console.log(viewMenu);
 
-const btnviewmenu = document.querySelector('.nav-btn');
+const btnviewMenu = document.querySelector('.nav-btn');
 
-console.log(btnviewmenu);
+console.log(btnviewMenu);
 
 const menu = {
-    viewmenu: document.querySelector('.main-nav'),
-    btnviewmenu: document.querySelector('.nav-btn'),
+    viewMenu: document.querySelector('.main-nav'),
+    btnviewMenu: document.querySelector('.nav-btn'),
 
     close() {
-        this.viewmenu.classList.add('main-nav_closed');
-        this.btnviewmenu.classList.remove('nav-btn_close');
-        this.btnviewmenu.classList.add('nav-btn_open');
-        this.btnviewmenu.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
+        this.viewMenu.classList.add('main-nav_closed');
+        this.btnviewMenu.classList.remove('nav-btn_close');
+        this.btnviewMenu.classList.add('nav-btn_open');
+        this.btnviewMenu.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
     },
 
     open() {
-        this.viewmenu.classList.remove('main-nav_closed');
-        this.btnviewmenu.classList.remove('nav-btn_open');
-        this.btnviewmenu.classList.add('nav-btn_close');
-        this.btnviewmenu.innerHTML = '<span class="visually-hidden">Закрыть меню</span>';
+        this.viewMenu.classList.remove('main-nav_closed');
+        this.btnviewMenu.classList.remove('nav-btn_open');
+        this.btnviewMenu.classList.add('nav-btn_close');
+        this.btnviewMenu.innerHTML = '<span class="visually-hidden">Закрыть меню</span>';
     }
 };
 
-menu.btnviewmenu.addEventListener('click', (e) => {
+menu.btnviewMenu.addEventListener('click', (e) => {
     if (e.target.classList.contains('nav-btn_open')) {
         menu.open();
     } else {
