@@ -37,16 +37,11 @@ const skills = {
 
         if (this.sortMode === sortType) {
             this.data.reverse();
-            console.log('инвертировали порядок сортировки');
-
         } else {
             if (sortType === 'name') {
                 this.data.sort(getComparer('nameNav'));
-                console.log('отсортировали по имени');
-
             } else if (sortType === 'level') {
                 this.data.sort(getComparer('lvlSkill'));
-                console.log('отсортировали по уровню');
             }
 
             this.sortMode = sortType;
@@ -78,9 +73,6 @@ function getComparer(prop) {
 
 skillsSortBlock.addEventListener('click', (e) => {
     if (e.target.nodeName === 'BUTTON') {
-        console.log('Клик по кнопке:', e.target);
-        console.log('Текст кнопки:', e.target.textContent);
-
         switch (e.target.dataset.type) {
             case 'name':
                 skills.sortList('name');
@@ -94,7 +86,6 @@ skillsSortBlock.addEventListener('click', (e) => {
 
         }
     }
-    console.clear()
 });
 
 const menu = {
@@ -106,7 +97,6 @@ const menu = {
         this.btnViewMenu.classList.remove('nav-btn_close');
         this.btnViewMenu.classList.add('nav-btn_open');
         this.btnViewMenu.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
-        console.clear()
     },
 
     open() {
@@ -114,7 +104,6 @@ const menu = {
         this.btnViewMenu.classList.remove('nav-btn_open');
         this.btnViewMenu.classList.add('nav-btn_close');
         this.btnViewMenu.innerHTML = '<span class="visually-hidden">Закрыть меню</span>';
-        console.clear()
     }
 };
 
