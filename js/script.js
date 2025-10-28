@@ -99,26 +99,26 @@ skillsSortBlock.addEventListener('click', (e) => {
 
 const menu = {
     viewMenu: document.querySelector('.main-nav'),
-    btnviewMenu: document.querySelector('.nav-btn'),
+    btnViewMenu: document.querySelector('.nav-btn'),
 
     close() {
         this.viewMenu.classList.add('main-nav_closed');
-        this.btnviewMenu.classList.remove('nav-btn_close');
-        this.btnviewMenu.classList.add('nav-btn_open');
-        this.btnviewMenu.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
+        this.btnViewMenu.classList.remove('nav-btn_close');
+        this.btnViewMenu.classList.add('nav-btn_open');
+        this.btnViewMenu.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
         console.clear()
     },
 
     open() {
         this.viewMenu.classList.remove('main-nav_closed');
-        this.btnviewMenu.classList.remove('nav-btn_open');
-        this.btnviewMenu.classList.add('nav-btn_close');
-        this.btnviewMenu.innerHTML = '<span class="visually-hidden">Закрыть меню</span>';
+        this.btnViewMenu.classList.remove('nav-btn_open');
+        this.btnViewMenu.classList.add('nav-btn_close');
+        this.btnViewMenu.innerHTML = '<span class="visually-hidden">Закрыть меню</span>';
         console.clear()
     }
 };
 
-menu.btnviewMenu.addEventListener('click', (e) => {
+menu.btnViewMenu.addEventListener('click', (e) => {
     if (e.target.classList.contains('nav-btn_open')) {
         menu.open();
     } else {
