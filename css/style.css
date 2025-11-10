@@ -414,7 +414,7 @@ ul {
     transition: 0.4s;
 }
 
-.switch-checkbox:checked + .switch-slider:before {
+.switch-checkbox:checked .switch-slider:before {
     transform: translateX(24px);
     background-color: #FFFFFF;
     background-image: url('../imgDarkTheme/sun.svg');
