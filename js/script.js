@@ -119,10 +119,20 @@ menu.close();
 
 const themeCheckbox = document.querySelector('.switch-checkbox');
 
-themeCheckbox.addEventListener('change', function() {
-    if (this.checked) {
+if (localStorage.getItem('theme') === 'light') {
+    themeCheckbox.checked = true;
+    document.body.classList.remove('dark-theme');
+} else {
+    themeCheckbox.checked = false;
+    document.body.classList.add('dark-theme');
+}
+
+themeCheckbox.addEventListener('change', (e) => {
+    if (e.target.checked) {
         document.body.classList.remove('dark-theme');
+        localStorage.setItem('theme', 'light');
     } else {
         document.body.classList.add('dark-theme');
+        localStorage.setItem('theme', 'dark');
     }
 });
