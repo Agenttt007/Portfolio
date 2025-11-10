@@ -349,6 +349,11 @@ ul {
     display: none;
 }
 
+.dark-theme{
+    --txt-color: #CCCCCC;
+    --bg-color: #031923;
+}
+
 @media screen and (max-width: 1024px) {
     h1 {
         font-size: 50px;
