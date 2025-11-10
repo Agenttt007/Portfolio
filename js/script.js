@@ -117,3 +117,12 @@ menu.btnViewMenu.addEventListener('click', (e) => {
 
 menu.close();
 
+const themeCheckbox = document.querySelector('.switch-checkbox');
+
+themeCheckbox.addEventListener('change', function() {
+    if (this.checked) {
+        document.body.classList.remove('dark-theme');
+    } else {
+        document.body.classList.add('dark-theme');
+    }
+});
