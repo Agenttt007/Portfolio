@@ -217,10 +217,20 @@ ul {
     background-image: url('../img/ContactsIcon.svg');
 }
 
+.dark-theme .contact-link_number_phone {
+    color: #CCCCCC;
+    background-image: url('../imgDarkTheme/icon=phone.svg');
+}
+
 .contact-link_my_email {
     text-decoration: none;
     color: #212121;
     background-image: url('../img/ContactsIconnn.svg');
+}
+
+.dark-theme .contact-link_my_email {
+    color: #CCCCCC;
+    background-image: url('../imgDarkTheme/icon=email.svg');
 }
 
 .social-link {
@@ -352,6 +362,10 @@ ul {
 .dark-theme{
     --txt-color: #CCCCCC;
     --bg-color: #031923;
+}
+
+.dark-theme .social-link{
+    background-color: #CCCCCC;
 }
 
 @media screen and (max-width: 1024px) {
