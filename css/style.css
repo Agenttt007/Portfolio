@@ -217,6 +217,10 @@ ul {
     background-image: url('../img/ContactsIcon.svg');
 }
 
+.dark-theme .main-footer {
+    background-color: var(--second-color);
+}
+
 .dark-theme .contact-link_number_phone {
     color: #CCCCCC;
     background-image: url('../imgDarkTheme/icon=phone.svg');
@@ -231,6 +235,10 @@ ul {
 .dark-theme .contact-link_my_email {
     color: #CCCCCC;
     background-image: url('../imgDarkTheme/icon=email.svg');
+}
+
+.dark-theme .social-link:hover {
+    background-color: var(--second-color);
 }
 
 .social-link {
@@ -359,12 +367,12 @@ ul {
     display: none;
 }
 
-.dark-theme{
+.dark-theme {
     --txt-color: #CCCCCC;
     --bg-color: #031923;
 }
 
-.dark-theme .social-link{
+.dark-theme .social-link {
     background-color: #CCCCCC;
 }
 
