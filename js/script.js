@@ -1,12 +1,24 @@
 'use strict';
 
+const skillsSection = document.querySelector('.skills');
+if (skillsSection) {
+    skillsSection.style.display = 'none';
+    console.log('Блок skills скрыт');
+}
+
 fetch('db/skills.json')
     .then(response => response.json())
     .then(data => {
         skills.data = data.skillsData;
         skills.generateList(skillList);
+        const skillsSection = document.querySelector('.section-skills');
+        if (skillsSection) {
+            skillsSection.classList.add('show');
+        }
     })
-    .catch(error => console.error('Ошибка при загрузке данных:', error));
+    .catch(error => {
+        console.error('Ошибка при загрузке данных:', error);
+    });
 
 const skills = {
     data: [],
@@ -56,11 +68,6 @@ const skills = {
 
 const skillList = document.querySelector('dl.skill-list');
 
-const skillsSection = document.querySelector('.skills');
-if (skillsSection) {
-    skillsSection.style.display = 'none';
-}
-
 const themeCheckbox = document.querySelector('.switch-checkbox');
 
 if (localStorage.getItem('theme') === 'light') {
@@ -81,8 +88,6 @@ themeCheckbox.addEventListener('change', (e) => {
     }
 });
 
-skills.getData('db/skills.json');
-
 const skillsSortBlock = document.querySelector('.section-skills-button-sort');
 
 function getComparer(prop) {
@@ -99,6 +104,10 @@ function getComparer(prop) {
 
 skillsSortBlock.addEventListener('click', (e) => {
     if (e.target.nodeName === 'BUTTON') {
+        if (!skills.data || skills.data.length === 0) {
+            console.log('Сортировка недоступна - нет данных');
+            return;
+        }
         switch (e.target.dataset.type) {
             case 'name':
                 skills.sortList('name');
