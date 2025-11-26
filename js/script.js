@@ -1,12 +1,15 @@
 'use strict';
 
+fetch('db/skills.json')
+    .then(response => response.json())
+    .then(data => {
+        skills.data = data.skillsData;
+        skills.generateList(skillList);
+    })
+    .catch(error => console.error('Ошибка при загрузке данных:', error));
+
 const skills = {
-    data: [
-        { nameNav: 'html', lvlSkill: 45, iconSkill: 'html.svg' },
-        { nameNav: 'css', lvlSkill: 25, iconSkill: 'css.svg' },
-        { nameNav: 'c++', lvlSkill: 55, iconSkill: 'c++.svg' },
-        { nameNav: 'python', lvlSkill: 70, iconSkill: 'python.svg' }
-    ],
+    data: [],
 
     sortMode: null,
 
@@ -53,7 +56,32 @@ const skills = {
 
 const skillList = document.querySelector('dl.skill-list');
 
-skills.generateList(skillList);
+const skillsSection = document.querySelector('.skills');
+if (skillsSection) {
+    skillsSection.style.display = 'none';
+}
+
+const themeCheckbox = document.querySelector('.switch-checkbox');
+
+if (localStorage.getItem('theme') === 'light') {
+    themeCheckbox.checked = true;
+    document.body.classList.remove('dark-theme');
+} else {
+    themeCheckbox.checked = false;
+    document.body.classList.add('dark-theme');
+}
+
+themeCheckbox.addEventListener('change', (e) => {
+    if (e.target.checked) {
+        document.body.classList.remove('dark-theme');
+        localStorage.setItem('theme', 'light');
+    } else {
+        document.body.classList.add('dark-theme');
+        localStorage.setItem('theme', 'dark');
+    }
+});
+
+skills.getData('db/skills.json');
 
 const skillsSortBlock = document.querySelector('.section-skills-button-sort');
 
@@ -68,8 +96,6 @@ function getComparer(prop) {
         return 0;
     };
 }
-
-
 
 skillsSortBlock.addEventListener('click', (e) => {
     if (e.target.nodeName === 'BUTTON') {
@@ -116,23 +142,3 @@ menu.btnViewMenu.addEventListener('click', (e) => {
 });
 
 menu.close();
-
-const themeCheckbox = document.querySelector('.switch-checkbox');
-
-if (localStorage.getItem('theme') === 'light') {
-    themeCheckbox.checked = true;
-    document.body.classList.remove('dark-theme');
-} else {
-    themeCheckbox.checked = false;
-    document.body.classList.add('dark-theme');
-}
-
-themeCheckbox.addEventListener('change', (e) => {
-    if (e.target.checked) {
-        document.body.classList.remove('dark-theme');
-        localStorage.setItem('theme', 'light');
-    } else {
-        document.body.classList.add('dark-theme');
-        localStorage.setItem('theme', 'dark');
-    }
-});

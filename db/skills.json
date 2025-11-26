@@ -1,0 +1,24 @@
+{
+    "skillsData": [
+        {
+            "nameNav": "html",
+            "lvlSkill": 45,
+            "iconSkill": "html.svg"
+        },
+        {
+            "nameNav": "css",
+            "lvlSkill": 25,
+            "iconSkill": "css.svg"
+        },
+        {
+            "nameNav": "c++",
+            "lvlSkill": 55,
+            "iconSkill": "c++.svg"
+        },
+        {
+            "nameNav": "python",
+            "lvlSkill": 70,
+            "iconSkill": "python.svg"
+        }
+    ]
+}
