@@ -3,15 +3,19 @@
 const skills = {
     data: [],
     sortMode: null,
+    skillList: null,
+    skillsSection: null,
+    skillsSortBlock: null,
+
+    init(elements){
+        this.skillList = elements.skillList;
+        this.skillsSection = elements.skillsSection;
+        this.skillsSortBlock = elements.skillsSortBlock;
+    },
 
     loadData() {
         return fetch('db/skills.json')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.json();
-            })
+            .then(response => response.json())
             .then(data => {
                 this.data = data.skillsData;
                 this.generateList();
@@ -24,28 +28,14 @@ const skills = {
             });
     },
 
-    showError(message) {
-        const skillList = document.querySelector('dl.skill-list');
-        if (skillList) {
-            skillList.innerHTML = `<p class="error-message">${message}</p>`;
-        }
-        this.showSection();
-    },
-
     showSection() {
-        const skillsSection = document.querySelector('.section-skills');
-        if (skillsSection) {
-            skillsSection.classList.add('show');
+        if (this.skillsSection) {
+            this.skillsSection.classList.add('show');
         }
     },
 
     generateList() {
-        const skillList = document.querySelector('dl.skill-list');
-        if (!skillList) {
-            return;
-        }
-
-        skillList.innerHTML = '';
+        this.skillList.innerHTML = '';
 
         this.data.forEach(item => {
             const dt = document.createElement('dt');
@@ -64,7 +54,7 @@ const skills = {
             div.textContent = `${skillLevel}%`;
 
             dd.append(div);
-            skillList.append(dt, dd);
+            this.skillList.append(dt, dd);
         });
     },
 
@@ -84,7 +74,7 @@ const skills = {
             this.sortMode = sortType;
         }
 
-        this.generateList(skillList);
+        this.generateList();
     },
 
     getComparer(prop) {
@@ -100,9 +90,18 @@ const skills = {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-    const skillsSection = document.querySelector('.skills');
     const skillList = document.querySelector('dl.skill-list');
+    const skillsSection = document.querySelector('.skills');
     const skillsSortBlock = document.querySelector('.section-skills-button-sort');
+    const themeCheckbox = document.querySelector('.switch-checkbox');
+    const viewMenu = document.querySelector('.main-nav');
+    const btnViewMenu = document.querySelector('.nav-btn');
+
+    skills.init({
+        skillList: document.querySelector('dl.skill-list'),
+    skillsSection: document.querySelector('.section-skills'),
+    skillsSortBlock: document.querySelector('.section-skills-button-sort')
+    });
 
     if (skillsSection) {
         skillsSection.style.display = 'none';
@@ -126,47 +125,51 @@ document.addEventListener('DOMContentLoaded', function () {
                         break;
 
                     default:
-
                 }
             }
         });
     }
 
-    const themeCheckbox = document.querySelector('.switch-checkbox');
     if (localStorage.getItem('theme') === 'light') {
-        themeCheckbox.checked = true;
+        if (themeCheckbox) themeCheckbox.checked = true;
         document.body.classList.remove('dark-theme');
     } else {
-        themeCheckbox.checked = false;
+        if (themeCheckbox) themeCheckbox.checked = false;
         document.body.classList.add('dark-theme');
     }
 
-    themeCheckbox.addEventListener('change', (e) => {
-        if (e.target.checked) {
-            document.body.classList.remove('dark-theme');
-            localStorage.setItem('theme', 'light');
-        } else {
-            document.body.classList.add('dark-theme');
-            localStorage.setItem('theme', 'dark');
-        }
-    });
+    if (themeCheckbox) {
+        themeCheckbox.addEventListener('change', (e) => {
+            if (e.target.checked) {
+                document.body.classList.remove('dark-theme');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.body.classList.add('dark-theme');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    }
 
     const menu = {
-        viewMenu: document.querySelector('.main-nav'),
-        btnViewMenu: document.querySelector('.nav-btn'),
+        viewMenu: viewMenu,
+        btnViewMenu: btnViewMenu,
 
         close() {
-            this.viewMenu.classList.add('main-nav_closed');
-            this.btnViewMenu.classList.remove('nav-btn_close');
-            this.btnViewMenu.classList.add('nav-btn_open');
-            this.btnViewMenu.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
+            if (this.viewMenu) this.viewMenu.classList.add('main-nav_closed');
+            if (this.btnViewMenu) {
+                this.btnViewMenu.classList.remove('nav-btn_close');
+                this.btnViewMenu.classList.add('nav-btn_open');
+                this.btnViewMenu.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
+            }
         },
 
         open() {
-            this.viewMenu.classList.remove('main-nav_closed');
-            this.btnViewMenu.classList.remove('nav-btn_open');
-            this.btnViewMenu.classList.add('nav-btn_close');
-            this.btnViewMenu.innerHTML = '<span class="visually-hidden">Закрыть меню</span>';
+            if (this.viewMenu) this.viewMenu.classList.remove('main-nav_closed');
+            if (this.btnViewMenu) {
+                this.btnViewMenu.classList.remove('nav-btn_open');
+                this.btnViewMenu.classList.add('nav-btn_close');
+                this.btnViewMenu.innerHTML = '<span class="visually-hidden">Закрыть меню</span>';
+            }
         }
     };
 
